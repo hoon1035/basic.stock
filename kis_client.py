@@ -44,15 +44,23 @@ class KISClient:
             raise Exception("KIS 키 없음")
         if self.token and self.token_expires and datetime.now() < self.token_expires:
             return self.token
-        r = requests.post(f"{BASE_URL}/oauth2/tokenP",
-            headers={"content-type": "application/json"},
-            data=json.dumps({"grant_type": "client_credentials",
-                "appkey": self.app_key, "appsecret": self.app_secret}), timeout=10)
-        r.raise_for_status()
-        self.token = r.json()['access_token']
-        self.token_expires = datetime.now() + timedelta(hours=23)
-        self._save_token_cache()
-        return self.token
+        # 403(1분 1회 제한) 대비 재시도
+        for attempt in range(5):
+            r = requests.post(f"{BASE_URL}/oauth2/tokenP",
+                headers={"content-type": "application/json"},
+                data=json.dumps({"grant_type": "client_credentials",
+                    "appkey": self.app_key, "appsecret": self.app_secret}), timeout=10)
+            if r.status_code == 200:
+                self.token = r.json()['access_token']
+                self.token_expires = datetime.now() + timedelta(hours=23)
+                self._save_token_cache()
+                return self.token
+            elif r.status_code in (403, 429):
+                print(f"   토큰 발급 제한 — {60}초 대기 (시도 {attempt+1}/5)")
+                time.sleep(62)  # 1분 1회 제한 → 62초 대기
+            else:
+                r.raise_for_status()
+        raise Exception("토큰 발급 실패 (403 지속)")
 
     def _rate_limit(self):
         with self.lock:
@@ -108,6 +116,30 @@ class KISClient:
             except: continue
             if len(parsed) >= days: break
         return parsed
+
+    def get_top_marketcap(self, market="0000", count=200):
+        """시가총액 상위 종목 코드 리스트
+        market: 0000=전체, 0001=코스피, 1001=코스닥
+        """
+        codes = []
+        result = self._call("/uapi/domestic-stock/v1/ranking/market-cap",
+            "FHPST01740000", {
+                "fid_cond_mrkt_div_code": "J",
+                "fid_cond_scr_div_code": "20174",
+                "fid_div_cls_code": "0",
+                "fid_input_iscd": market,
+                "fid_trgt_cls_code": "0",
+                "fid_trgt_exls_cls_code": "0",
+                "fid_input_price_1": "",
+                "fid_input_price_2": "",
+                "fid_vol_cnt": "",
+            })
+        if result and result.get('rt_cd') == '0':
+            for row in result.get('output', [])[:count]:
+                code = row.get('mksc_shrn_iscd', '').strip()
+                if code:
+                    codes.append(code)
+        return codes
 
     def get_price(self, stock_code):
         """현재가 + 등락률 + 외인소진율"""
