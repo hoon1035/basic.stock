@@ -35,6 +35,13 @@ def get_token():
 # 2. 종목 리스트 — themes.json 에서 읽기
 #    (themes.json 의 모든 종목코드를 유니버스로)
 # ───────────────────────────────────────────
+def load_names():
+    try:
+        with open("names.json", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
 def load_universe():
     with open("themes.json", encoding="utf-8") as f:
         themes = json.load(f)["themes"]
@@ -45,6 +52,58 @@ def load_universe():
         for code in t["codes"]:
             universe.setdefault(code, []).append(key)
     return universe, theme_meta
+
+
+# ───────────────────────────────────────────
+# 2-B. KRX 지수구성종목 자동 수집 (코스피200 + 코스닥150)
+# ───────────────────────────────────────────
+def fetch_index_components(idx_code, mkt):
+    """KRX 지수 구성종목 코드 리스트
+    idx_code: 코스피200=1028, 코스닥150=2203
+    mkt: STK(코스피) / KSQ(코스닥)
+    """
+    url = "http://data.krx.co.kr/comm/bldAttendant/getJsonData.cmd"
+    headers = {
+        "User-Agent": "Mozilla/5.0",
+        "Referer": "http://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd",
+    }
+    # 최근 영업일 (오늘부터 거꾸로 시도)
+    for back in range(0, 7):
+        d = (datetime.now() - timedelta(days=back)).strftime("%Y%m%d")
+        data = {
+            "bld": "dbms/MDC/STAT/standard/MDCSTAT00601",
+            "locale": "ko_KR",
+            "tboxindIdx_finder_equidx0_2": "",
+            "indIdx": "1" if mkt=="STK" else "2",
+            "indIdx2": idx_code,
+            "codeNmindIdx_finder_equidx0_2": "",
+            "param1indIdx_finder_equidx0_2": "",
+            "trdDd": d,
+            "money": "1", "csvxls_isNo": "false",
+        }
+        try:
+            r = requests.post(url, data=data, headers=headers, timeout=10)
+            r.raise_for_status()
+            rows = r.json().get("output", [])
+            if rows:
+                codes = [row.get("ISU_SRT_CD","").strip() for row in rows if row.get("ISU_SRT_CD")]
+                names = {row.get("ISU_SRT_CD","").strip(): row.get("ISU_ABBRV","").strip() for row in rows}
+                return codes, names
+        except Exception as e:
+            continue
+    return [], {}
+
+def build_universe_350():
+    """코스피200 + 코스닥150 = 약 350개 자동 수집"""
+    print("   코스피200 수집 중...")
+    k200, n1 = fetch_index_components("1028", "STK")
+    print(f"   코스피200: {len(k200)}개")
+    print("   코스닥150 수집 중...")
+    kq150, n2 = fetch_index_components("2203", "KSQ")
+    print(f"   코스닥150: {len(kq150)}개")
+    allcodes = list(dict.fromkeys(k200 + kq150))  # 중복 제거
+    allnames = {**n1, **n2}
+    return allcodes, allnames
 
 # ───────────────────────────────────────────
 # 3. KIS 종목별 투자자 수급 (최근 N일)
@@ -104,7 +163,7 @@ def get_price(token, code):
 # ───────────────────────────────────────────
 # 5. 지표 계산 (시나리오 + 게이트 + CMF 근사)
 # ───────────────────────────────────────────
-def calc_metrics(days):
+def calc_metrics(days, day_chg=0):
     if not days:
         return None
     sumF = sum(d["foreign"] for d in days)
@@ -129,11 +188,11 @@ def calc_metrics(days):
     ad_trend = "up" if recent > older and netflow > 0 else "down" if netflow < 0 else "flat"
 
     # 거래량-가격 다이버전스: 가격 방향 vs 수급 방향 불일치
-    price_up = days[0]["chg"] > 0
+    price_up = day_chg > 0
     flow_up = netflow > 0
     vol_diverge = price_up != flow_up
 
-    chg = days[0]["chg"]
+    chg = day_chg  # 현재가 등락률 사용 (days의 chg는 0으로 오는 경우 많음)
     # 시나리오 판정 (시안 로직과 동일)
     if netflow < 0 and chg > 0:
         sc = "distribute"
@@ -159,38 +218,56 @@ def calc_metrics(days):
 def main():
     if not KIS_APP_KEY or not KIS_APP_SECRET:
         print("[FAIL] KIS 키 없음 — Secrets 확인")
+        print(f"   KIS_APP_KEY 길이: {len(KIS_APP_KEY)}")
+        print(f"   KIS_APP_SECRET 길이: {len(KIS_APP_SECRET)}")
+        print("   → Settings > Secrets and variables > Actions 에 등록했는지 확인")
+        # 빈 파일이라도 만들어서 커밋 에러 방지
+        with open("data.json", "w", encoding="utf-8") as f:
+            json.dump({"error": "KIS 키 없음", "stocks": {}, "themes": {}}, f, ensure_ascii=False, indent=2)
         return
 
     print("1) 토큰 발급...")
     token = get_token()
     print("   [OK]")
 
-    print("2) 종목 유니버스 로드 (themes.json)...")
-    universe, theme_meta = load_universe()
-    print(f"   [OK] {len(universe)}개 종목, {len(theme_meta)}개 테마")
+    print("2) 종목 유니버스 구성...")
+    # 350개 자동 수집 (코스피200 + 코스닥150)
+    uni_codes, uni_names = build_universe_350()
+    # 테마(themes.json) — 메인에 보여줄 묶음
+    theme_universe, theme_meta = load_universe()
+    file_names = load_names()
+    # 이름 우선순위: names.json > KRX > 코드
+    names = {**uni_names, **file_names}
+    # 테마 종목도 유니버스에 포함 (혹시 350개에 없으면)
+    all_codes = list(dict.fromkeys(uni_codes + list(theme_universe.keys())))
+    if not all_codes:
+        print("   [경고] KRX 수집 실패 — themes.json 종목만 사용")
+        all_codes = list(theme_universe.keys())
+    print(f"   [OK] 총 {len(all_codes)}개 종목, 테마 {len(theme_meta)}개")
 
-    print("3) 종목별 수급 수집 (KIS)...")
+    print("3) 종목별 수급 수집 (KIS) — 시간 좀 걸려요...")
     stocks = {}
-    for i, code in enumerate(universe.keys(), 1):
+    for i, code in enumerate(all_codes, 1):
         try:
             price = get_price(token, code)
             time.sleep(0.05)
             days = get_supply(token, code)
             time.sleep(0.05)
-            metrics = calc_metrics(days)
+            metrics = calc_metrics(days, price["chg"])
             if metrics:
                 stocks[code] = {
                     "code": code,
-                    "name": price["name"],
+                    "name": names.get(code) or price["name"],
                     "price": price["price"],
                     "chg": price["chg"],
                     "vol": price["vol"],
-                    "themes": universe[code],
+                    "themes": theme_universe.get(code, []),
                     **metrics,
                 }
-            print(f"   [{i}/{len(universe)}] {code} {price['name']} OK")
+            if i % 25 == 0 or i == len(all_codes):
+                print(f"   진행 [{i}/{len(all_codes)}]...")
         except Exception as e:
-            print(f"   [{i}/{len(universe)}] {code} 실패: {e}")
+            print(f"   [{i}/{len(all_codes)}] {code} 실패: {e}")
         time.sleep(0.1)   # API 호출 제한 (초당 제한 회피)
 
     # 테마별 집계 (RRG 좌표용)
