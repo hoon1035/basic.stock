@@ -10,12 +10,18 @@ import json
 import os
 
 # ───── (1) 한국증권 (한국투자증권 KIS) ─────
-KIS_APP_KEY    = os.environ.get("KIS_APP_KEY", "")
-KIS_APP_SECRET = os.environ.get("KIS_APP_SECRET", "")
+KIS_APP_KEY    = os.environ.get("PSNjkjOsBfFX8lg7aEKqkWDGNVS9ghAmhwcV", "")
+KIS_APP_SECRET = os.environ.get("0Z+zdhH0E0KPaaQtyEkchkTgj9L4DxtP3W4UfA9WujEMn2gIpgmeE8/AaUz3yokxNHWXlAVSyKTYPhYGmakyl9XhRIzjlsZMTZIPZ4UauBzfiBDQABHTiIfsl3j2P57yZOQkkw0KQHIzR8NuBRsk8RQ0R5xX2SvVoyv0cgnHzQ6Dck4tAd8=", "")
+
+# ───── (2) 한국거래소 (KRX) ─────
+#   ※ KRX는 키가 필요 없습니다 (공개 데이터). 넣을 칸 없음.
 
 # ───── (3) 네이버 ─────
-NAVER_CLIENT_ID     = os.environ.get("NAVER_CLIENT_ID", "")
-NAVER_CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET", "")
+NAVER_CLIENT_ID     = os.environ.get("CiAgt0Pwh7", "")
+NAVER_CLIENT_SECRET = os.environ.get("CoeqbFMyF8a9EbRzOX57", "")
+
+# ───── (4) 공시 (DART 전자공시) ─────
+DART_API_KEY = os.environ.get("DART_API_KEY", "")
 
 
 def test_kis():
@@ -113,6 +119,32 @@ def test_naver():
         print(f"   [FAIL] 실패: {e}")
 
 
+def test_dart():
+    print("\n[ (4) 공시 (DART) - 삼성전자 최근 공시 ]")
+    if not DART_API_KEY:
+        print("   - 키 안 넣음, 건너뜀")
+        return
+    try:
+        url = "https://opendart.fss.or.kr/api/list.json"
+        params = {
+            "crtfc_key": DART_API_KEY,
+            "corp_code": "00126380",   # 삼성전자 DART 고유번호
+            "page_count": "5",
+        }
+        r = requests.get(url, params=params, timeout=10)
+        r.raise_for_status()
+        data = r.json()
+        if data.get("status") == "000":
+            items = data.get("list", [])
+            print(f"   [OK] 공시 {len(items)}건 받음!")
+            if items:
+                print(f"   --- 최근: {items[0].get('report_nm','?')} ({items[0].get('rcept_dt','?')})")
+        else:
+            print(f"   [?] 응답: {data.get('message','?')} (키 확인)")
+    except Exception as e:
+        print(f"   [FAIL] 실패: {e}")
+
+
 if __name__ == "__main__":
     print("=" * 52)
     print("  API 연결 테스트 v2 - 수급 값 확인")
@@ -120,6 +152,7 @@ if __name__ == "__main__":
     test_kis()
     test_krx()
     test_naver()
+    test_dart()
     print("\n" + "=" * 52)
     print("  결과를 의표형한테 복사해서 보여주세요!")
     print("=" * 52)
