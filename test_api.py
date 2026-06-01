@@ -10,8 +10,8 @@ import json
 import os
 
 # ───── (1) 한국증권 (한국투자증권 KIS) ─────
-KIS_APP_KEY    = os.environ.get("PSNjkjOsBfFX8lg7aEKqkWDGNVS9ghAmhwcV", "")
-KIS_APP_SECRET = os.environ.get("0Z+zdhH0E0KPaaQtyEkchkTgj9L4DxtP3W4UfA9WujEMn2gIpgmeE8/AaUz3yokxNHWXlAVSyKTYPhYGmakyl9XhRIzjlsZMTZIPZ4UauBzfiBDQABHTiIfsl3j2P57yZOQkkw0KQHIzR8NuBRsk8RQ0R5xX2SvVoyv0cgnHzQ6Dck4tAd8=", "")
+KIS_APP_KEY    = os.environ.get("KIS_APP_KEY", "PSNjkjOsBfFX8lg7aEKqkWDGNVS9ghAmhwcV")
+KIS_APP_SECRET = os.environ.get("KIS_APP_SECRET", "0Z+zdhH0E0KPaaQtyEkchkTgj9L4DxtP3W4UfA9WujEMn2gIpgmeE8/AaUz3yokxNHWXlAVSyKTYPhYGmakyl9XhRIzjlsZMTZIPZ4UauBzfiBDQABHTiIfsl3j2P57yZOQkkw0KQHIzR8NuBRsk8RQ0R5xX2SvVoyv0cgnHzQ6Dck4tAd8=")
 
 # ───── (2) 한국거래소 (KRX) ─────
 #   ※ KRX는 키가 필요 없습니다 (공개 데이터). 넣을 칸 없음.
