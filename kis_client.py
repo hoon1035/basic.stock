@@ -149,8 +149,9 @@ class KISClient:
             return {}
         o = result.get('output', {})
         try:
+            nm = (o.get('hts_kor_isnm') or o.get('prdt_abrv_name') or o.get('rprs_mrkt_kor_name') or '').strip()
             return {
-                'name': o.get('hts_kor_isnm', stock_code),
+                'name': nm or stock_code,
                 'price': int(o.get('stck_prpr', 0) or 0),
                 'chg': float(o.get('prdy_ctrt', 0) or 0),
                 'vol': int(o.get('acml_vol', 0) or 0),
