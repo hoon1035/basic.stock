@@ -8,29 +8,19 @@ import json, time
 from datetime import datetime, timedelta
 from kis_client import KISClient
 
-# ── 종목 유니버스 (코스피200 + 코스닥150) ──
-def build_universe():
-    codes, names = [], {}
+# ── 종목 유니버스 (KIS 시가총액 상위) ──
+def build_universe(kis):
+    """KIS API로 코스피+코스닥 시총 상위 종목 수집"""
+    codes = []
     try:
-        from pykrx import stock
-        d = None
-        for back in range(7):
-            d = (datetime.now() - timedelta(days=back)).strftime("%Y%m%d")
-            try:
-                k200 = stock.get_index_portfolio_deposit_file("1028", date=d)
-                if k200: break
-            except: k200 = []
-        print(f"   코스피200: {len(k200)}개")
-        try: kq150 = stock.get_index_portfolio_deposit_file("2203", date=d)
-        except: kq150 = []
-        print(f"   코스닥150: {len(kq150)}개")
-        codes = list(dict.fromkeys(list(k200) + list(kq150)))
-        for c in codes:
-            try: names[c] = stock.get_market_ticker_name(c)
-            except: pass
+        kospi = kis.get_top_marketcap("0001", count=200)   # 코스피 상위 200
+        print(f"   코스피 시총상위: {len(kospi)}개")
+        kosdaq = kis.get_top_marketcap("1001", count=150)  # 코스닥 상위 150
+        print(f"   코스닥 시총상위: {len(kosdaq)}개")
+        codes = list(dict.fromkeys(kospi + kosdaq))
     except Exception as e:
-        print(f"   [경고] pykrx 실패: {e}")
-    return codes, names
+        print(f"   [경고] 시총상위 수집 실패: {e}")
+    return codes, {}
 
 def load_themes():
     with open("themes.json", encoding="utf-8") as f:
@@ -85,7 +75,7 @@ def main():
         return
 
     print("1) 종목 유니버스 구성...")
-    uni_codes, uni_names = build_universe()
+    uni_codes, uni_names = build_universe(kis)
     theme_universe, theme_meta = load_themes()
     file_names = load_names()
     names = {**uni_names, **file_names}
