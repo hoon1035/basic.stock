@@ -21,8 +21,8 @@ def get_token():
     url = f"{BASE}/oauth2/tokenP"
     body = {
         "grant_type": "client_credentials",
-        "appkey": APP_KEY,
-        "appsecret": APP_SECRET,
+        "appkey": PSNjkjOsBfFX8lg7aEKqkWDGNVS9ghAmhwcV,
+        "appsecret": 0Z+zdhH0E0KPaaQtyEkchkTgj9L4DxtP3W4UfA9WujEMn2gIpgmeE8/AaUz3yokxNHWXlAVSyKTYPhYGmakyl9XhRIzjlsZMTZIPZ4UauBzfiBDQABHTiIfsl3j2P57yZOQkkw0KQHIzR8NuBRsk8RQ0R5xX2SvVoyv0cgnHzQ6Dck4tAd8=,
     }
     res = requests.post(url, data=json.dumps(body))
     res.raise_for_status()
