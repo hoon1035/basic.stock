@@ -1,10 +1,12 @@
-# daily.yml — 매일 장마감 후 자동 수집 → data.json 커밋
-name: 매일 데이터 수집
+# daily.yml — 장중 1시간마다 자동 수집 → data.json 커밋
+name: 데이터 수집
 
 on:
   schedule:
-    - cron: '30 9 * * 1-5'   # UTC 09:30 = KST 18:30 (평일, 장마감 후)
-  workflow_dispatch:          # 수동 실행 버튼도 가능
+    # UTC 0~6시 = KST 9~15시 (장중) 매시 정각 + 장마감 후 1번
+    - cron: '0 0-6 * * 1-5'    # 장중 매시간 (KST 9~15시)
+    - cron: '30 9 * * 1-5'     # KST 18:30 최종 확정
+  workflow_dispatch:           # 수동 실행 버튼
 
 permissions:
   contents: write             # data.json 커밋 권한
