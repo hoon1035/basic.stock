@@ -1,38 +1,25 @@
 """
-test_api.py — API 연결 테스트
+test_api.py — API 연결 테스트 (v2 — 수급 값 채워진 날 표시)
 =====================================================
-형이 가진 키를 아래 칸에 넣으세요.
-가진 것만 넣으면 됩니다. 없는 건 비워두세요.
+형이 가진 키를 아래 칸에 넣으세요. 가진 것만 넣으면 됩니다.
+Secrets로 넣으면 빈칸 그대로 둬도 됩니다.
 =====================================================
 """
 import requests
 import json
-
-# ╔═══════════════════════════════════════════════════╗
-# ║   여기에 형 키를 넣으세요 (가진 것만)              ║
-# ╚═══════════════════════════════════════════════════╝
+import os
 
 # ───── (1) 한국증권 (한국투자증권 KIS) ─────
-#   apiportal.koreainvestment.com 에서 발급
-KIS_APP_KEY    = "PSNjkjOsBfFX8lg7aEKqkWDGNVS9ghAmhwcV"      # <-- 여기에 앱키 붙여넣기
-KIS_APP_SECRET = "0Z+zdhH0E0KPaaQtyEkchkTgj9L4DxtP3W4UfA9WujEMn2gIpgmeE8/AaUz3yokxNHWXlAVSyKTYPhYGmakyl9XhRIzjlsZMTZIPZ4UauBzfiBDQABHTiIfsl3j2P57yZOQkkw0KQHIzR8NuBRsk8RQ0R5xX2SvVoyv0cgnHzQ6Dck4tAd8="      # <-- 여기에 시크릿 붙여넣기
-
-# ───── (2) 한국거래소 (KRX) ─────
-#   data.krx.co.kr — 보통 키 없이도 됨
-KRX_API_KEY    = "615bb47a94e9c380440aba06b7c40c36f51654cb"      # <-- 있으면 넣기 (없어도 됨)
+KIS_APP_KEY    = os.environ.get("KIS_APP_KEY", "")
+KIS_APP_SECRET = os.environ.get("KIS_APP_SECRET", "")
 
 # ───── (3) 네이버 ─────
-#   네이버 개발자센터 API 키
-NAVER_CLIENT_ID     = "CoeqbFMyF8a9EbRzOX57 "   # <-- 네이버 클라이언트 ID
-NAVER_CLIENT_SECRET = "CiAgt0Pwh7"   # <-- 네이버 시크릿
+NAVER_CLIENT_ID     = os.environ.get("NAVER_CLIENT_ID", "")
+NAVER_CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET", "")
 
-
-# ===================================================
-#   아래는 건드리지 마세요 (테스트 코드)
-# ===================================================
 
 def test_kis():
-    print("\n[ (1) 한국증권 (KIS) 테스트 ]")
+    print("\n[ (1) 한국증권 (KIS) - 삼성전자 외인/기관 수급 ]")
     if not KIS_APP_KEY or not KIS_APP_SECRET:
         print("   - 키 안 넣음, 건너뜀")
         return
@@ -44,7 +31,8 @@ def test_kis():
         }))
         res.raise_for_status()
         token = res.json()["access_token"]
-        print(f"   [OK] 토큰 발급 성공: {token[:15]}...")
+        print(f"   [OK] 토큰 발급 성공")
+
         headers = {
             "authorization": f"Bearer {token}",
             "appkey": KIS_APP_KEY, "appsecret": KIS_APP_SECRET,
@@ -54,37 +42,61 @@ def test_kis():
         r = requests.get(f"{BASE}/uapi/domestic-stock/v1/quotations/inquire-investor",
                          headers=headers, params=params)
         r.raise_for_status()
-        print("   [OK] 삼성전자 투자자 데이터 받음!")
-        print("   --- 응답 일부 ---")
-        print("   " + json.dumps(r.json(), ensure_ascii=False)[:300])
+        rows = r.json().get("output", [])
+        print(f"   [OK] 응답 {len(rows)}일치 받음")
+
+        # 수급 값이 채워진 날(장마감 확정)만 골라서 보여주기
+        print("\n   === 최근 수급 (채워진 날 = 장마감 확정) ===")
+        shown = 0
+        for row in rows:
+            frgn = row.get("frgn_ntby_qty", "").strip()
+            orgn = row.get("orgn_ntby_qty", "").strip()
+            prsn = row.get("prsn_ntby_qty", "").strip()
+            date = row.get("stck_bsop_date", "?")
+            clpr = row.get("stck_clpr", "?")
+            if frgn:  # 값이 있으면
+                print(f"   {date} | 종가 {clpr} | 외인 {frgn} | 기관 {orgn} | 개인 {prsn}")
+                shown += 1
+            if shown >= 5:
+                break
+        if shown == 0:
+            print("   [?] 수급 값이 다 비어있음 — 장중이거나 권한 문제")
+        else:
+            print(f"\n   [OK] 수급 데이터 정상! 외인/기관 순매수 숫자 확인됨")
     except Exception as e:
         print(f"   [FAIL] 실패: {e}")
 
 
 def test_krx():
-    print("\n[ (2) 한국거래소 (KRX) 테스트 ]")
+    print("\n[ (2) 한국거래소 (KRX) - 전종목 시세 ]")
     try:
         url = "http://data.krx.co.kr/comm/bldAttendant/getJsonData.cmd"
-        headers = {"User-Agent": "Mozilla/5.0", "Referer": "http://data.krx.co.kr/"}
+        headers = {
+            "User-Agent": "Mozilla/5.0",
+            "Referer": "http://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd",
+        }
+        # 영업일 자동 계산 대신 고정 영업일 사용 (테스트)
         data = {
             "bld": "dbms/MDC/STAT/standard/MDCSTAT01501",
+            "locale": "ko_KR",
             "mktId": "STK",
-            "trdDd": "20250530",   # 조회일 (영업일로 바꾸세요)
+            "trdDd": "20260530",
+            "share": "1", "money": "1", "csvxls_isNo": "false",
         }
         r = requests.post(url, data=data, headers=headers, timeout=10)
         r.raise_for_status()
         rows = r.json().get("OutBlock_1", [])
         if rows:
-            print(f"   [OK] KRX 전종목 {len(rows)}개 받음! (키 불필요)")
-            print(f"   --- 첫 종목: {rows[0].get('ISU_ABBRV','?')} ---")
+            print(f"   [OK] KRX 전종목 {len(rows)}개! (키 불필요)")
+            print(f"   --- 예: {rows[0].get('ISU_ABBRV','?')} 종가 {rows[0].get('TDD_CLSPRC','?')}")
         else:
-            print("   [?] 응답은 왔는데 데이터 없음 (날짜를 영업일로 바꿔보세요)")
+            print("   [?] 데이터 없음 (날짜를 최근 영업일로)")
     except Exception as e:
         print(f"   [FAIL] 실패: {e}")
 
 
 def test_naver():
-    print("\n[ (3) 네이버 테스트 ]")
+    print("\n[ (3) 네이버 ]")
     if not NAVER_CLIENT_ID or not NAVER_CLIENT_SECRET:
         print("   - 키 안 넣음, 건너뜀")
         return
@@ -96,19 +108,18 @@ def test_naver():
         }
         r = requests.get(url, headers=headers, params={"query": "삼성전자"})
         r.raise_for_status()
-        print(f"   [OK] 네이버 API 연결 성공! (뉴스 {r.json().get('total','?')}건)")
+        print(f"   [OK] 네이버 연결 성공 (뉴스 {r.json().get('total','?')}건)")
     except Exception as e:
         print(f"   [FAIL] 실패: {e}")
 
 
 if __name__ == "__main__":
-    print("=" * 50)
-    print("  API 연결 테스트 - 가진 키만 자동으로 테스트")
-    print("=" * 50)
+    print("=" * 52)
+    print("  API 연결 테스트 v2 - 수급 값 확인")
+    print("=" * 52)
     test_kis()
     test_krx()
     test_naver()
-    print("\n" + "=" * 50)
-    print("  [OK] 표시된 게 쓸 수 있는 API입니다.")
-    print("  이 결과를 의표형한테 복사해서 보여주세요!")
-    print("=" * 50)
+    print("\n" + "=" * 52)
+    print("  결과를 의표형한테 복사해서 보여주세요!")
+    print("=" * 52)
