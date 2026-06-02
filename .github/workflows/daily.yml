@@ -1,15 +1,21 @@
-# daily.yml — 장중 1시간마다 자동 수집 → data.json 커밋
+# daily.yml — 장중 자동 수집 → data.json 커밋
+# ⚠️ cron은 UTC 기준! 한국시간(KST) = UTC + 9시간
+#    KST 9시 = UTC 0시 / KST 15시 = UTC 6시 / KST 18시 = UTC 9시
+# ⚠️ GitHub cron은 정시(0분)에 잘 씹힘 → 일부러 7분/37분 같은 시간 사용
 name: 데이터 수집
 
 on:
   schedule:
-    # UTC 0~6시 = KST 9~15시 (장중) 매시 정각 + 장마감 후 1번
-    - cron: '0 0-6 * * 1-5'    # 장중 매시간 (KST 9~15시)
-    - cron: '30 9 * * 1-5'     # KST 18:30 최종 확정
-  workflow_dispatch:           # 수동 실행 버튼
+    # 장중 2시간마다 (KST 9·11·13·15시 = UTC 0·2·4·6시), 7분에 실행
+    - cron: '7 0 * * 1-5'    # KST 09:07
+    - cron: '7 2 * * 1-5'    # KST 11:07
+    - cron: '7 4 * * 1-5'    # KST 13:07
+    - cron: '7 6 * * 1-5'    # KST 15:07
+    - cron: '37 9 * * 1-5'   # KST 18:37 (장마감 후 최종 확정)
+  workflow_dispatch:          # 수동 실행 버튼
 
 permissions:
-  contents: write             # data.json 커밋 권한
+  contents: write
 
 jobs:
   collect:
@@ -17,21 +23,17 @@ jobs:
     steps:
       - name: 코드 가져오기
         uses: actions/checkout@v4
-
       - name: 파이썬 설치
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
       - name: 패키지 설치
         run: pip install -r requirements.txt
-
       - name: 데이터 수집 실행
         env:
           KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
           KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
         run: python collect.py
-
       - name: data.json 커밋
         run: |
           git config user.name "github-actions"
