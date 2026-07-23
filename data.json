@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-23 06:39",
+  "updated": "2026-07-23 08:43",
   "stocks": {
     "005930": {
       "code": "005930",
       "name": "삼성전자",
       "price": 270000,
       "chg": 3.65,
-      "vol": 15988693,
+      "vol": 16000165,
       "foreignRatio": 46.71,
       "themes": [
         "HBM반도체"
@@ -76,7 +76,7 @@
       "name": "SK하이닉스",
       "price": 1919000,
       "chg": 4.86,
-      "vol": 4079998,
+      "vol": 4081543,
       "foreignRatio": 52.5,
       "themes": [
         "HBM반도체"
@@ -146,18 +146,25 @@
       "name": "SK스퀘어",
       "price": 1221000,
       "chg": -0.73,
-      "vol": 687052,
+      "vol": 688227,
       "foreignRatio": 45.55,
       "themes": [],
-      "sumF": -1384469,
-      "sumI": 973488,
-      "sumR": 413090,
-      "cmf": -0.5,
-      "vwapGap": -15.4,
+      "sumF": -1111543,
+      "sumI": 886955,
+      "sumR": 229140,
+      "cmf": -0.49,
+      "vwapGap": -14.3,
       "adTrend": "down",
       "volDiverge": false,
       "scenario": "exit",
       "days": [
+        {
+          "date": "20260723",
+          "close": 1221000,
+          "foreign": -28936,
+          "inst": -81667,
+          "retail": 109099
+        },
         {
           "date": "20260722",
           "close": 1230000,
@@ -199,13 +206,6 @@
           "foreign": 172449,
           "inst": -80264,
           "retail": -90959
-        },
-        {
-          "date": "20260713",
-          "close": 1161000,
-          "foreign": 90652,
-          "inst": -142797,
-          "retail": 45546
         }
       ]
     },
@@ -214,7 +214,7 @@
       "name": "삼성전자우",
       "price": 191100,
       "chg": 3.24,
-      "vol": 2351167,
+      "vol": 2362516,
       "foreignRatio": 76.72,
       "themes": [],
       "sumF": -2143483,
@@ -282,7 +282,7 @@
       "name": "삼성전기",
       "price": 1448000,
       "chg": 7.66,
-      "vol": 663033,
+      "vol": 663151,
       "foreignRatio": 39.8,
       "themes": [],
       "sumF": 440127,
@@ -350,7 +350,7 @@
       "name": "현대차",
       "price": 432000,
       "chg": 3.35,
-      "vol": 717518,
+      "vol": 717603,
       "foreignRatio": 25.15,
       "themes": [],
       "sumF": 342988,
@@ -418,20 +418,27 @@
       "name": "LG에너지솔루션",
       "price": 348000,
       "chg": 8.41,
-      "vol": 327066,
+      "vol": 327080,
       "foreignRatio": 5.54,
       "themes": [
         "2차전지"
       ],
-      "sumF": 130091,
-      "sumI": -331149,
-      "sumR": 417392,
-      "cmf": -0.33,
-      "vwapGap": -5.5,
+      "sumF": 153073,
+      "sumI": -255909,
+      "sumR": 296112,
+      "cmf": -0.26,
+      "vwapGap": 2.7,
       "adTrend": "down",
       "volDiverge": true,
       "scenario": "distribute",
       "days": [
+        {
+          "date": "20260723",
+          "close": 348000,
+          "foreign": -9871,
+          "inst": 85026,
+          "retail": -73260
+        },
         {
           "date": "20260722",
           "close": 321000,
@@ -473,13 +480,6 @@
           "foreign": -40850,
           "inst": 45603,
           "retail": -6461
-        },
-        {
-          "date": "20260713",
-          "close": 328500,
-          "foreign": -12289,
-          "inst": 57831,
-          "retail": -47435
         }
       ]
     },
@@ -488,7 +488,7 @@
       "name": "삼성생명",
       "price": 329500,
       "chg": 2.97,
-      "vol": 267059,
+      "vol": 267062,
       "foreignRatio": 23.37,
       "themes": [],
       "sumF": 352384,
@@ -556,7 +556,7 @@
       "name": "삼성바이오로직스",
       "price": 1379000,
       "chg": 0.51,
-      "vol": 42233,
+      "vol": 42236,
       "foreignRatio": 12.79,
       "themes": [],
       "sumF": 55035,
@@ -624,7 +624,7 @@
       "name": "KB금융",
       "price": 176300,
       "chg": 0.69,
-      "vol": 1044178,
+      "vol": 1044277,
       "foreignRatio": 79.41,
       "themes": [],
       "sumF": -2268728,
@@ -692,7 +692,7 @@
       "name": "기아",
       "price": 149800,
       "chg": 2.04,
-      "vol": 555022,
+      "vol": 555094,
       "foreignRatio": 39.0,
       "themes": [],
       "sumF": 1035652,
@@ -760,7 +760,7 @@
       "name": "삼성물산",
       "price": 360000,
       "chg": 1.69,
-      "vol": 352476,
+      "vol": 352487,
       "foreignRatio": 30.91,
       "themes": [],
       "sumF": 251990,
@@ -828,20 +828,27 @@
       "name": "HD현대중공업",
       "price": 498000,
       "chg": 7.21,
-      "vol": 264189,
+      "vol": 264343,
       "foreignRatio": 13.95,
       "themes": [
         "조선"
       ],
-      "sumF": -17511,
-      "sumI": 35715,
-      "sumR": -8695,
-      "cmf": 0.68,
-      "vwapGap": -12.6,
+      "sumF": -56434,
+      "sumI": 98988,
+      "sumR": -32423,
+      "cmf": 0.57,
+      "vwapGap": -5.6,
       "adTrend": "flat",
       "volDiverge": false,
       "scenario": "accumulate",
       "days": [
+        {
+          "date": "20260723",
+          "close": 498000,
+          "foreign": -21280,
+          "inst": 23294,
+          "retail": -3422
+        },
         {
           "date": "20260722",
           "close": 464500,
@@ -883,13 +890,6 @@
           "foreign": -35762,
           "inst": 45236,
           "retail": -7918
-        },
-        {
-          "date": "20260713",
-          "close": 487500,
-          "foreign": -10574,
-          "inst": 31921,
-          "retail": -20620
         }
       ]
     },
@@ -898,7 +898,7 @@
       "name": "한화에어로스페이스",
       "price": 958000,
       "chg": 7.52,
-      "vol": 209757,
+      "vol": 209791,
       "foreignRatio": 45.31,
       "themes": [
         "방산"
@@ -968,7 +968,7 @@
       "name": "신한지주",
       "price": 103800,
       "chg": -0.67,
-      "vol": 1067561,
+      "vol": 1067569,
       "foreignRatio": 61.54,
       "themes": [],
       "sumF": -1098809,
@@ -1036,7 +1036,7 @@
       "name": "현대모비스",
       "price": 524000,
       "chg": 2.14,
-      "vol": 298772,
+      "vol": 298791,
       "foreignRatio": 37.28,
       "themes": [],
       "sumF": 431932,
@@ -1104,7 +1104,7 @@
       "name": "SK",
       "price": 655000,
       "chg": 4.97,
-      "vol": 194685,
+      "vol": 194686,
       "foreignRatio": 29.76,
       "themes": [],
       "sumF": -214259,
@@ -1172,7 +1172,7 @@
       "name": "두산에너빌리티",
       "price": 73200,
       "chg": 5.78,
-      "vol": 1763888,
+      "vol": 1764464,
       "foreignRatio": 24.22,
       "themes": [],
       "sumF": 592199,
@@ -1240,7 +1240,7 @@
       "name": "셀트리온",
       "price": 172200,
       "chg": 1.23,
-      "vol": 400453,
+      "vol": 400464,
       "foreignRatio": 24.81,
       "themes": [],
       "sumF": 165418,
@@ -1308,7 +1308,7 @@
       "name": "삼성SDI",
       "price": 467000,
       "chg": 11.46,
-      "vol": 450644,
+      "vol": 450675,
       "foreignRatio": 26.41,
       "themes": [],
       "sumF": -141499,
@@ -1376,7 +1376,7 @@
       "name": "KOSPI200",
       "price": 130500,
       "chg": -0.84,
-      "vol": 825180,
+      "vol": 825182,
       "foreignRatio": 68.48,
       "themes": [],
       "sumF": -540885,
@@ -1444,7 +1444,7 @@
       "name": "NAVER",
       "price": 220000,
       "chg": 11.73,
-      "vol": 1907571,
+      "vol": 1907827,
       "foreignRatio": 35.38,
       "themes": [],
       "sumF": 853590,
@@ -1512,7 +1512,7 @@
       "name": "LS ELECTRIC",
       "price": 223500,
       "chg": 17.26,
-      "vol": 1309084,
+      "vol": 1309554,
       "foreignRatio": 18.17,
       "themes": [
         "전력설비"
@@ -1582,7 +1582,7 @@
       "name": "HD현대일렉트릭",
       "price": 869000,
       "chg": 9.31,
-      "vol": 128458,
+      "vol": 128462,
       "foreignRatio": 34.48,
       "themes": [
         "전력설비"
@@ -1652,7 +1652,7 @@
       "name": "LG전자",
       "price": 187500,
       "chg": 2.63,
-      "vol": 1096041,
+      "vol": 1096100,
       "foreignRatio": 29.17,
       "themes": [],
       "sumF": 913243,
@@ -1788,7 +1788,7 @@
       "name": "한화오션",
       "price": 89900,
       "chg": 7.15,
-      "vol": 1911591,
+      "vol": 1912188,
       "foreignRatio": 9.34,
       "themes": [
         "조선"
@@ -1858,7 +1858,7 @@
       "name": "HD한국조선해양",
       "price": 381000,
       "chg": 7.78,
-      "vol": 185375,
+      "vol": 185377,
       "foreignRatio": 33.46,
       "themes": [
         "조선"
@@ -1928,7 +1928,7 @@
       "name": "효성중공업",
       "price": 2866000,
       "chg": 6.98,
-      "vol": 33369,
+      "vol": 33373,
       "foreignRatio": 26.76,
       "themes": [
         "전력설비"
@@ -1998,7 +1998,7 @@
       "name": "POSCO홀딩스",
       "price": 323500,
       "chg": 6.77,
-      "vol": 326823,
+      "vol": 326824,
       "foreignRatio": 32.47,
       "themes": [
         "2차전지"
@@ -2068,7 +2068,7 @@
       "name": "알테오젠",
       "price": 306500,
       "chg": 14.37,
-      "vol": 556805,
+      "vol": 556827,
       "foreignRatio": 14.36,
       "themes": [],
       "sumF": -102632,
@@ -2206,7 +2206,7 @@
       "name": "에코프로",
       "price": 84300,
       "chg": 9.34,
-      "vol": 934621,
+      "vol": 934759,
       "foreignRatio": 19.36,
       "themes": [],
       "sumF": -1178842,
@@ -2274,7 +2274,7 @@
       "name": "레인보우로보틱스",
       "price": 508000,
       "chg": 6.17,
-      "vol": 392772,
+      "vol": 392786,
       "foreignRatio": 6.29,
       "themes": [
         "로봇"
@@ -2344,7 +2344,7 @@
       "name": "주성엔지니어링",
       "price": 163900,
       "chg": 1.17,
-      "vol": 1525396,
+      "vol": 1537297,
       "foreignRatio": 6.39,
       "themes": [],
       "sumF": -925828,
@@ -2412,7 +2412,7 @@
       "name": "리노공업",
       "price": 73900,
       "chg": 2.92,
-      "vol": 654359,
+      "vol": 654502,
       "foreignRatio": 32.7,
       "themes": [],
       "sumF": 4424109,
@@ -2480,7 +2480,7 @@
       "name": "원익IPS",
       "price": 113300,
       "chg": 1.43,
-      "vol": 1187554,
+      "vol": 1198962,
       "foreignRatio": 13.91,
       "themes": [],
       "sumF": -1481470,
@@ -2548,7 +2548,7 @@
       "name": "KSQ150",
       "price": 157000,
       "chg": 0.19,
-      "vol": 518782,
+      "vol": 518944,
       "foreignRatio": 19.91,
       "themes": [],
       "sumF": -1276754,
@@ -2616,7 +2616,7 @@
       "name": "에이비엘바이오",
       "price": 74300,
       "chg": 7.06,
-      "vol": 302522,
+      "vol": 302529,
       "foreignRatio": 13.88,
       "themes": [],
       "sumF": 327455,
@@ -2684,7 +2684,7 @@
       "name": "이오테크닉스",
       "price": 328500,
       "chg": 6.48,
-      "vol": 93677,
+      "vol": 93683,
       "foreignRatio": 30.05,
       "themes": [
         "HBM반도체"
@@ -2754,7 +2754,7 @@
       "name": "HLB",
       "price": 30000,
       "chg": 6.01,
-      "vol": 913352,
+      "vol": 913354,
       "foreignRatio": 18.11,
       "themes": [],
       "sumF": -1808653,
@@ -2822,7 +2822,7 @@
       "name": "삼천당제약",
       "price": 166100,
       "chg": 8.7,
-      "vol": 516893,
+      "vol": 517273,
       "foreignRatio": 5.21,
       "themes": [],
       "sumF": -425555,
@@ -2890,7 +2890,7 @@
       "name": "리가켐바이오",
       "price": 101700,
       "chg": 8.31,
-      "vol": 293405,
+      "vol": 293489,
       "foreignRatio": 11.74,
       "themes": [],
       "sumF": 124014,
@@ -2958,7 +2958,7 @@
       "name": "파마리서치",
       "price": 360000,
       "chg": 11.63,
-      "vol": 182221,
+      "vol": 182266,
       "foreignRatio": 6.6,
       "themes": [],
       "sumF": -205028,
@@ -3026,18 +3026,25 @@
       "name": "파두",
       "price": 73700,
       "chg": 4.69,
-      "vol": 351709,
+      "vol": 352195,
       "foreignRatio": 27.61,
       "themes": [],
-      "sumF": 459955,
-      "sumI": -93304,
-      "sumR": -444026,
-      "cmf": 0.45,
-      "vwapGap": -8.3,
+      "sumF": 273384,
+      "sumI": 190314,
+      "sumR": -528312,
+      "cmf": 0.47,
+      "vwapGap": -3.2,
       "adTrend": "flat",
       "volDiverge": false,
       "scenario": "accumulate",
       "days": [
+        {
+          "date": "20260723",
+          "close": 73700,
+          "foreign": -8583,
+          "inst": 27621,
+          "retail": -19441
+        },
         {
           "date": "20260722",
           "close": 70400,
@@ -3079,13 +3086,6 @@
           "foreign": -93246,
           "inst": 100458,
           "retail": -3272
-        },
-        {
-          "date": "20260713",
-          "close": 70600,
-          "foreign": -58388,
-          "inst": 53264,
-          "retail": -2847
         }
       ]
     },
@@ -3094,7 +3094,7 @@
       "name": "심텍",
       "price": 98300,
       "chg": 0.72,
-      "vol": 563728,
+      "vol": 563801,
       "foreignRatio": 10.33,
       "themes": [],
       "sumF": -1036385,
@@ -3162,18 +3162,25 @@
       "name": "HPSP",
       "price": 39650,
       "chg": 2.19,
-      "vol": 1971589,
+      "vol": 1991873,
       "foreignRatio": 32.39,
       "themes": [],
-      "sumF": 1944871,
-      "sumI": -7875026,
-      "sumR": 5824386,
+      "sumF": 2228950,
+      "sumI": -8090376,
+      "sumR": 5759795,
       "cmf": -0.5,
-      "vwapGap": -14.0,
+      "vwapGap": -11.1,
       "adTrend": "down",
       "volDiverge": true,
       "scenario": "distribute",
       "days": [
+        {
+          "date": "20260723",
+          "close": 39650,
+          "foreign": -276614,
+          "inst": 39744,
+          "retail": 227031
+        },
         {
           "date": "20260722",
           "close": 38800,
@@ -3215,13 +3222,6 @@
           "foreign": -185756,
           "inst": 2610,
           "retail": 193289
-        },
-        {
-          "date": "20260713",
-          "close": 41900,
-          "foreign": 33976,
-          "inst": -86461,
-          "retail": 51385
         }
       ]
     },
@@ -3230,7 +3230,7 @@
       "name": "로보티즈",
       "price": 216500,
       "chg": -1.37,
-      "vol": 245497,
+      "vol": 245499,
       "foreignRatio": 7.36,
       "themes": [
         "로봇"
@@ -3436,7 +3436,7 @@
       "name": "KSQ150",
       "price": 154100,
       "chg": -1.53,
-      "vol": 880341,
+      "vol": 880360,
       "foreignRatio": 7.22,
       "themes": [],
       "sumF": -491644,
@@ -3572,7 +3572,7 @@
       "name": "디앤디파마텍",
       "price": 64000,
       "chg": 8.47,
-      "vol": 1244914,
+      "vol": 1253067,
       "foreignRatio": 5.37,
       "themes": [],
       "sumF": -743879,
@@ -3640,7 +3640,7 @@
       "name": "KSQ150",
       "price": 44250,
       "chg": 1.96,
-      "vol": 241570,
+      "vol": 241573,
       "foreignRatio": 70.95,
       "themes": [],
       "sumF": 121339,
@@ -3776,7 +3776,7 @@
       "name": "제주반도체",
       "price": 80900,
       "chg": 7.87,
-      "vol": 1513073,
+      "vol": 1534289,
       "foreignRatio": 0.39,
       "themes": [],
       "sumF": -413792,
@@ -3844,7 +3844,7 @@
       "name": "서진시스템",
       "price": 42500,
       "chg": 17.24,
-      "vol": 1201132,
+      "vol": 1207397,
       "foreignRatio": 17.44,
       "themes": [],
       "sumF": 1662253,
@@ -3912,7 +3912,7 @@
       "name": "KSQ150",
       "price": 239500,
       "chg": -0.21,
-      "vol": 135626,
+      "vol": 135632,
       "foreignRatio": 9.62,
       "themes": [],
       "sumF": -94117,
@@ -3980,7 +3980,7 @@
       "name": "KSQ150",
       "price": 121000,
       "chg": -0.82,
-      "vol": 263778,
+      "vol": 263782,
       "foreignRatio": 6.12,
       "themes": [],
       "sumF": -30612,
@@ -4048,7 +4048,7 @@
       "name": "펩트론",
       "price": 108800,
       "chg": 5.02,
-      "vol": 162351,
+      "vol": 162358,
       "foreignRatio": 6.01,
       "themes": [],
       "sumF": 122267,
@@ -4116,7 +4116,7 @@
       "name": "제룡전기",
       "price": 47100,
       "chg": 9.28,
-      "vol": 171524,
+      "vol": 171525,
       "foreignRatio": 4.09,
       "themes": [
         "전력설비"
@@ -4186,7 +4186,7 @@
       "name": "산일전기",
       "price": 183600,
       "chg": 10.14,
-      "vol": 291214,
+      "vol": 291258,
       "foreignRatio": 17.92,
       "themes": [
         "전력설비"
@@ -4326,7 +4326,7 @@
       "name": "한미반도체",
       "price": 216000,
       "chg": 0.47,
-      "vol": 1111855,
+      "vol": 1111998,
       "foreignRatio": 7.69,
       "themes": [
         "HBM반도체"
@@ -4396,7 +4396,7 @@
       "name": "오픈엣지테크놀로지",
       "price": 10320,
       "chg": 3.72,
-      "vol": 42315,
+      "vol": 42316,
       "foreignRatio": 2.55,
       "themes": [
         "HBM반도체"
@@ -4466,7 +4466,7 @@
       "name": "삼성중공업",
       "price": 23650,
       "chg": 9.49,
-      "vol": 4185365,
+      "vol": 4185660,
       "foreignRatio": 29.08,
       "themes": [
         "조선"
@@ -4606,7 +4606,7 @@
       "name": "LG화학",
       "price": 271500,
       "chg": 7.74,
-      "vol": 183131,
+      "vol": 183148,
       "foreignRatio": 37.48,
       "themes": [
         "2차전지"
@@ -4746,7 +4746,7 @@
       "name": "한국항공우주",
       "price": 164100,
       "chg": 9.91,
-      "vol": 570811,
+      "vol": 571930,
       "foreignRatio": 24.49,
       "themes": [
         "방산"
@@ -4816,7 +4816,7 @@
       "name": "LIG넥스원",
       "price": 736000,
       "chg": 10.34,
-      "vol": 112693,
+      "vol": 112740,
       "foreignRatio": 25.97,
       "themes": [
         "방산"
@@ -4886,7 +4886,7 @@
       "name": "빅텍",
       "price": 3110,
       "chg": 4.71,
-      "vol": 292102,
+      "vol": 294505,
       "foreignRatio": 4.02,
       "themes": [
         "방산"
@@ -4956,7 +4956,7 @@
       "name": "두산로보틱스",
       "price": 69800,
       "chg": 3.25,
-      "vol": 741571,
+      "vol": 747422,
       "foreignRatio": 5.96,
       "themes": [
         "로봇"
@@ -5026,7 +5026,7 @@
       "name": "에브리봇",
       "price": 13250,
       "chg": -3.21,
-      "vol": 222007,
+      "vol": 222011,
       "foreignRatio": 0.0,
       "themes": [
         "로봇"
@@ -5110,14 +5110,14 @@
     "조선": {
       "label": "조선",
       "emoji": "🚢",
-      "flow": -2253103,
+      "flow": -2228753,
       "chg": 7.29,
       "count": 5
     },
     "2차전지": {
       "label": "2차전지",
       "emoji": "🔋",
-      "flow": 535492,
+      "flow": 633714,
       "chg": 8.57,
       "count": 5
     },
