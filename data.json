@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-27 12:44",
+  "updated": "2026-07-28 03:28",
   "stocks": {
     "005930": {
       "code": "005930",
       "name": "삼성전자",
-      "price": 254000,
-      "chg": 1.8,
-      "vol": 23296044,
+      "price": 222750,
+      "chg": -12.3,
+      "vol": 20882773,
       "foreignRatio": 46.66,
       "themes": [
         "HBM반도체"
@@ -17,8 +17,8 @@
       "cmf": -0.5,
       "vwapGap": -9.5,
       "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
+      "volDiverge": false,
+      "scenario": "exit",
       "days": [
         {
           "date": "20260727",
@@ -74,9 +74,9 @@
     "000660": {
       "code": "000660",
       "name": "SK하이닉스",
-      "price": 1816000,
-      "chg": 3.24,
-      "vol": 4030933,
+      "price": 1583000,
+      "chg": -12.83,
+      "vol": 3775808,
       "foreignRatio": 52.39,
       "themes": [
         "HBM반도체"
@@ -87,8 +87,8 @@
       "cmf": -0.51,
       "vwapGap": -13.6,
       "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
+      "volDiverge": false,
+      "scenario": "exit",
       "days": [
         {
           "date": "20260727",
@@ -141,12 +141,80 @@
         }
       ]
     },
+    "005935": {
+      "code": "005935",
+      "name": "삼성전자우",
+      "price": 160100,
+      "chg": -10.96,
+      "vol": 2337608,
+      "foreignRatio": 76.7,
+      "themes": [],
+      "sumF": -2089291,
+      "sumI": 2472900,
+      "sumR": -488375,
+      "cmf": 0.44,
+      "vwapGap": -5.6,
+      "adTrend": "up",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 179800,
+          "foreign": -144295,
+          "inst": 90452,
+          "retail": 33454
+        },
+        {
+          "date": "20260724",
+          "close": 177100,
+          "foreign": -47179,
+          "inst": -364550,
+          "retail": 417246
+        },
+        {
+          "date": "20260723",
+          "close": 191100,
+          "foreign": -120674,
+          "inst": 136470,
+          "retail": -54110
+        },
+        {
+          "date": "20260722",
+          "close": 185100,
+          "foreign": 42317,
+          "inst": 518266,
+          "retail": -556063
+        },
+        {
+          "date": "20260721",
+          "close": 181000,
+          "foreign": 189623,
+          "inst": 271304,
+          "retail": -482519
+        },
+        {
+          "date": "20260720",
+          "close": 169200,
+          "foreign": 713577,
+          "inst": -1410,
+          "retail": -693751
+        },
+        {
+          "date": "20260716",
+          "close": 172000,
+          "foreign": -1021183,
+          "inst": -86806,
+          "retail": 1118432
+        }
+      ]
+    },
     "402340": {
       "code": "402340",
       "name": "SK스퀘어",
-      "price": 1096000,
-      "chg": -1.17,
-      "vol": 892851,
+      "price": 935000,
+      "chg": -14.69,
+      "vol": 531778,
       "foreignRatio": 45.52,
       "themes": [],
       "sumF": -768253,
@@ -209,80 +277,12 @@
         }
       ]
     },
-    "005935": {
-      "code": "005935",
-      "name": "삼성전자우",
-      "price": 179800,
-      "chg": 1.52,
-      "vol": 2104536,
-      "foreignRatio": 76.7,
-      "themes": [],
-      "sumF": -2089291,
-      "sumI": 2472900,
-      "sumR": -488375,
-      "cmf": 0.44,
-      "vwapGap": -5.6,
-      "adTrend": "up",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 179800,
-          "foreign": -144295,
-          "inst": 90452,
-          "retail": 33454
-        },
-        {
-          "date": "20260724",
-          "close": 177100,
-          "foreign": -47179,
-          "inst": -364550,
-          "retail": 417246
-        },
-        {
-          "date": "20260723",
-          "close": 191100,
-          "foreign": -120674,
-          "inst": 136470,
-          "retail": -54110
-        },
-        {
-          "date": "20260722",
-          "close": 185100,
-          "foreign": 42317,
-          "inst": 518266,
-          "retail": -556063
-        },
-        {
-          "date": "20260721",
-          "close": 181000,
-          "foreign": 189623,
-          "inst": 271304,
-          "retail": -482519
-        },
-        {
-          "date": "20260720",
-          "close": 169200,
-          "foreign": 713577,
-          "inst": -1410,
-          "retail": -693751
-        },
-        {
-          "date": "20260716",
-          "close": 172000,
-          "foreign": -1021183,
-          "inst": -86806,
-          "retail": 1118432
-        }
-      ]
-    },
     "009150": {
       "code": "009150",
       "name": "삼성전기",
-      "price": 1325000,
-      "chg": -0.08,
-      "vol": 611650,
+      "price": 1105000,
+      "chg": -16.6,
+      "vol": 522619,
       "foreignRatio": 39.39,
       "themes": [],
       "sumF": 193187,
@@ -348,9 +348,9 @@
     "005380": {
       "code": "005380",
       "name": "현대차",
-      "price": 403000,
-      "chg": 0.5,
-      "vol": 563634,
+      "price": 366500,
+      "chg": -9.06,
+      "vol": 422409,
       "foreignRatio": 24.96,
       "themes": [],
       "sumF": 281177,
@@ -359,8 +359,8 @@
       "cmf": 0.53,
       "vwapGap": -10.2,
       "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
+      "volDiverge": true,
+      "scenario": "stealth",
       "days": [
         {
           "date": "20260727",
@@ -416,9 +416,9 @@
     "373220": {
       "code": "373220",
       "name": "LG에너지솔루션",
-      "price": 333000,
-      "chg": 1.06,
-      "vol": 126791,
+      "price": 315000,
+      "chg": -5.41,
+      "vol": 102821,
       "foreignRatio": 5.53,
       "themes": [
         "2차전지"
@@ -429,8 +429,8 @@
       "cmf": 0.01,
       "vwapGap": -1.4,
       "adTrend": "up",
-      "volDiverge": false,
-      "scenario": "accumulate",
+      "volDiverge": true,
+      "scenario": "stealth",
       "days": [
         {
           "date": "20260727",
@@ -486,9 +486,9 @@
     "207940": {
       "code": "207940",
       "name": "삼성바이오로직스",
-      "price": 1545000,
-      "chg": 1.78,
-      "vol": 99652,
+      "price": 1541000,
+      "chg": -0.26,
+      "vol": 79134,
       "foreignRatio": 12.93,
       "themes": [],
       "sumF": 75512,
@@ -497,8 +497,8 @@
       "cmf": 0.51,
       "vwapGap": 10.1,
       "adTrend": "up",
-      "volDiverge": false,
-      "scenario": "accumulate",
+      "volDiverge": true,
+      "scenario": "stealth",
       "days": [
         {
           "date": "20260727",
@@ -551,12 +551,80 @@
         }
       ]
     },
+    "105560": {
+      "code": "105560",
+      "name": "KB금융",
+      "price": 168200,
+      "chg": -2.55,
+      "vol": 475049,
+      "foreignRatio": 79.4,
+      "themes": [],
+      "sumF": -2440912,
+      "sumI": 3761828,
+      "sumR": -1235619,
+      "cmf": 0.52,
+      "vwapGap": 0.2,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 172600,
+          "foreign": -216186,
+          "inst": 242517,
+          "retail": -25886
+        },
+        {
+          "date": "20260724",
+          "close": 171500,
+          "foreign": -36411,
+          "inst": -63306,
+          "retail": 111076
+        },
+        {
+          "date": "20260723",
+          "close": 176300,
+          "foreign": 252522,
+          "inst": -163760,
+          "retail": -82420
+        },
+        {
+          "date": "20260722",
+          "close": 175100,
+          "foreign": 200707,
+          "inst": -186874,
+          "retail": -11749
+        },
+        {
+          "date": "20260721",
+          "close": 174000,
+          "foreign": -17229,
+          "inst": 58387,
+          "retail": -39505
+        },
+        {
+          "date": "20260720",
+          "close": 168800,
+          "foreign": -160224,
+          "inst": 232399,
+          "retail": -65154
+        },
+        {
+          "date": "20260716",
+          "close": 181100,
+          "foreign": -54077,
+          "inst": 80309,
+          "retail": -18051
+        }
+      ]
+    },
     "032830": {
       "code": "032830",
       "name": "삼성생명",
-      "price": 311500,
-      "chg": -2.04,
-      "vol": 194030,
+      "price": 280500,
+      "chg": -9.95,
+      "vol": 191343,
       "foreignRatio": 23.38,
       "themes": [],
       "sumF": 493455,
@@ -619,80 +687,12 @@
         }
       ]
     },
-    "105560": {
-      "code": "105560",
-      "name": "KB금융",
-      "price": 172600,
-      "chg": 0.64,
-      "vol": 784284,
-      "foreignRatio": 79.4,
-      "themes": [],
-      "sumF": -2440912,
-      "sumI": 3761828,
-      "sumR": -1235619,
-      "cmf": 0.52,
-      "vwapGap": 0.2,
-      "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 172600,
-          "foreign": -216186,
-          "inst": 242517,
-          "retail": -25886
-        },
-        {
-          "date": "20260724",
-          "close": 171500,
-          "foreign": -36411,
-          "inst": -63306,
-          "retail": 111076
-        },
-        {
-          "date": "20260723",
-          "close": 176300,
-          "foreign": 252522,
-          "inst": -163760,
-          "retail": -82420
-        },
-        {
-          "date": "20260722",
-          "close": 175100,
-          "foreign": 200707,
-          "inst": -186874,
-          "retail": -11749
-        },
-        {
-          "date": "20260721",
-          "close": 174000,
-          "foreign": -17229,
-          "inst": 58387,
-          "retail": -39505
-        },
-        {
-          "date": "20260720",
-          "close": 168800,
-          "foreign": -160224,
-          "inst": 232399,
-          "retail": -65154
-        },
-        {
-          "date": "20260716",
-          "close": 181100,
-          "foreign": -54077,
-          "inst": 80309,
-          "retail": -18051
-        }
-      ]
-    },
     "028260": {
       "code": "028260",
       "name": "삼성물산",
-      "price": 339500,
-      "chg": -0.73,
-      "vol": 273529,
+      "price": 300500,
+      "chg": -11.49,
+      "vol": 193211,
       "foreignRatio": 30.88,
       "themes": [],
       "sumF": 430693,
@@ -755,12 +755,80 @@
         }
       ]
     },
+    "055550": {
+      "code": "055550",
+      "name": "신한지주",
+      "price": 102600,
+      "chg": -2.29,
+      "vol": 415184,
+      "foreignRatio": 61.58,
+      "themes": [],
+      "sumF": -846906,
+      "sumI": 2420233,
+      "sumR": -1072334,
+      "cmf": 0.59,
+      "vwapGap": 0.5,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 105000,
+          "foreign": -15733,
+          "inst": 14296,
+          "retail": 1561
+        },
+        {
+          "date": "20260724",
+          "close": 104400,
+          "foreign": 216296,
+          "inst": -84142,
+          "retail": -131909
+        },
+        {
+          "date": "20260723",
+          "close": 103800,
+          "foreign": 264691,
+          "inst": -326484,
+          "retail": 63211
+        },
+        {
+          "date": "20260722",
+          "close": 104500,
+          "foreign": 285286,
+          "inst": -312983,
+          "retail": 35168
+        },
+        {
+          "date": "20260721",
+          "close": 104700,
+          "foreign": 4649,
+          "inst": 68063,
+          "retail": -68389
+        },
+        {
+          "date": "20260720",
+          "close": 101800,
+          "foreign": -213197,
+          "inst": 132214,
+          "retail": 84616
+        },
+        {
+          "date": "20260716",
+          "close": 107900,
+          "foreign": -8892,
+          "inst": 35487,
+          "retail": -16784
+        }
+      ]
+    },
     "329180": {
       "code": "329180",
       "name": "HD현대중공업",
-      "price": 486500,
-      "chg": 0.21,
-      "vol": 128891,
+      "price": 460000,
+      "chg": -5.45,
+      "vol": 158757,
       "foreignRatio": 13.78,
       "themes": [
         "조선"
@@ -771,8 +839,8 @@
       "cmf": -0.48,
       "vwapGap": -6.2,
       "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
+      "volDiverge": false,
+      "scenario": "exit",
       "days": [
         {
           "date": "20260727",
@@ -828,9 +896,9 @@
     "000270": {
       "code": "000270",
       "name": "기아",
-      "price": 130400,
-      "chg": -0.08,
-      "vol": 1048912,
+      "price": 122200,
+      "chg": -6.29,
+      "vol": 512685,
       "foreignRatio": 38.94,
       "themes": [],
       "sumF": 617774,
@@ -893,80 +961,12 @@
         }
       ]
     },
-    "055550": {
-      "code": "055550",
-      "name": "신한지주",
-      "price": 105000,
-      "chg": 0.57,
-      "vol": 694952,
-      "foreignRatio": 61.58,
-      "themes": [],
-      "sumF": -846906,
-      "sumI": 2420233,
-      "sumR": -1072334,
-      "cmf": 0.59,
-      "vwapGap": 0.5,
-      "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 105000,
-          "foreign": -15733,
-          "inst": 14296,
-          "retail": 1561
-        },
-        {
-          "date": "20260724",
-          "close": 104400,
-          "foreign": 216296,
-          "inst": -84142,
-          "retail": -131909
-        },
-        {
-          "date": "20260723",
-          "close": 103800,
-          "foreign": 264691,
-          "inst": -326484,
-          "retail": 63211
-        },
-        {
-          "date": "20260722",
-          "close": 104500,
-          "foreign": 285286,
-          "inst": -312983,
-          "retail": 35168
-        },
-        {
-          "date": "20260721",
-          "close": 104700,
-          "foreign": 4649,
-          "inst": 68063,
-          "retail": -68389
-        },
-        {
-          "date": "20260720",
-          "close": 101800,
-          "foreign": -213197,
-          "inst": 132214,
-          "retail": 84616
-        },
-        {
-          "date": "20260716",
-          "close": 107900,
-          "foreign": -8892,
-          "inst": 35487,
-          "retail": -16784
-        }
-      ]
-    },
     "012450": {
       "code": "012450",
       "name": "한화에어로스페이스",
-      "price": 899000,
-      "chg": -8.17,
-      "vol": 173455,
+      "price": 866000,
+      "chg": -3.67,
+      "vol": 65065,
       "foreignRatio": 45.25,
       "themes": [
         "방산"
@@ -1031,216 +1031,12 @@
         }
       ]
     },
-    "034020": {
-      "code": "034020",
-      "name": "두산에너빌리티",
-      "price": 70900,
-      "chg": -1.66,
-      "vol": 1484901,
-      "foreignRatio": 24.03,
-      "themes": [],
-      "sumF": 9398,
-      "sumI": 742819,
-      "sumR": -744346,
-      "cmf": 0.5,
-      "vwapGap": -7.4,
-      "adTrend": "flat",
-      "volDiverge": true,
-      "scenario": "stealth",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 70900,
-          "foreign": -435793,
-          "inst": 14666,
-          "retail": 427051
-        },
-        {
-          "date": "20260724",
-          "close": 72100,
-          "foreign": -89147,
-          "inst": -124306,
-          "retail": 209421
-        },
-        {
-          "date": "20260723",
-          "close": 73200,
-          "foreign": 195539,
-          "inst": 54397,
-          "retail": -248049
-        },
-        {
-          "date": "20260722",
-          "close": 69200,
-          "foreign": 482817,
-          "inst": -49485,
-          "retail": -465597
-        },
-        {
-          "date": "20260721",
-          "close": 66800,
-          "foreign": 539303,
-          "inst": -227235,
-          "retail": -310261
-        },
-        {
-          "date": "20260720",
-          "close": 64800,
-          "foreign": 250746,
-          "inst": -2863,
-          "retail": -251444
-        },
-        {
-          "date": "20260716",
-          "close": 69700,
-          "foreign": -163280,
-          "inst": -19212,
-          "retail": 165835
-        }
-      ]
-    },
-    "034730": {
-      "code": "034730",
-      "name": "SK",
-      "price": 623000,
-      "chg": -1.11,
-      "vol": 155413,
-      "foreignRatio": 29.61,
-      "themes": [],
-      "sumF": -66612,
-      "sumI": 145696,
-      "sumR": -93590,
-      "cmf": 0.46,
-      "vwapGap": -3.8,
-      "adTrend": "flat",
-      "volDiverge": true,
-      "scenario": "stealth",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 623000,
-          "foreign": -21460,
-          "inst": 27472,
-          "retail": -4331
-        },
-        {
-          "date": "20260724",
-          "close": 630000,
-          "foreign": -25707,
-          "inst": 9332,
-          "retail": 16068
-        },
-        {
-          "date": "20260723",
-          "close": 655000,
-          "foreign": -44244,
-          "inst": 24204,
-          "retail": 15954
-        },
-        {
-          "date": "20260722",
-          "close": 624000,
-          "foreign": 2920,
-          "inst": 1946,
-          "retail": -4561
-        },
-        {
-          "date": "20260721",
-          "close": 596000,
-          "foreign": -24286,
-          "inst": 26548,
-          "retail": -2366
-        },
-        {
-          "date": "20260720",
-          "close": 579000,
-          "foreign": -33180,
-          "inst": 48386,
-          "retail": -15346
-        },
-        {
-          "date": "20260716",
-          "close": 580000,
-          "foreign": 18442,
-          "inst": -3724,
-          "retail": -14407
-        }
-      ]
-    },
-    "012330": {
-      "code": "012330",
-      "name": "현대모비스",
-      "price": 463500,
-      "chg": -3.84,
-      "vol": 299260,
-      "foreignRatio": 37.16,
-      "themes": [],
-      "sumF": 260531,
-      "sumI": -5316,
-      "sumR": -447128,
-      "cmf": 0.36,
-      "vwapGap": -5.3,
-      "adTrend": "flat",
-      "volDiverge": true,
-      "scenario": "stealth",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 463500,
-          "foreign": -43924,
-          "inst": -39273,
-          "retail": 82190
-        },
-        {
-          "date": "20260724",
-          "close": 482000,
-          "foreign": -12379,
-          "inst": -49233,
-          "retail": 63245
-        },
-        {
-          "date": "20260723",
-          "close": 524000,
-          "foreign": 5581,
-          "inst": -1580,
-          "retail": -5879
-        },
-        {
-          "date": "20260722",
-          "close": 513000,
-          "foreign": -1762,
-          "inst": 86970,
-          "retail": -84964
-        },
-        {
-          "date": "20260721",
-          "close": 479500,
-          "foreign": 19673,
-          "inst": -11130,
-          "retail": -17945
-        },
-        {
-          "date": "20260720",
-          "close": 472500,
-          "foreign": 53106,
-          "inst": -16436,
-          "retail": -42125
-        },
-        {
-          "date": "20260716",
-          "close": 482000,
-          "foreign": 16847,
-          "inst": -10418,
-          "retail": -10931
-        }
-      ]
-    },
     "068270": {
       "code": "068270",
       "name": "셀트리온",
-      "price": 178700,
-      "chg": 0.62,
-      "vol": 494728,
+      "price": 180200,
+      "chg": 0.84,
+      "vol": 857033,
       "foreignRatio": 24.81,
       "themes": [],
       "sumF": 217797,
@@ -1303,12 +1099,216 @@
         }
       ]
     },
+    "034020": {
+      "code": "034020",
+      "name": "두산에너빌리티",
+      "price": 65200,
+      "chg": -8.04,
+      "vol": 1158756,
+      "foreignRatio": 24.03,
+      "themes": [],
+      "sumF": 9398,
+      "sumI": 742819,
+      "sumR": -744346,
+      "cmf": 0.5,
+      "vwapGap": -7.4,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 70900,
+          "foreign": -435793,
+          "inst": 14666,
+          "retail": 427051
+        },
+        {
+          "date": "20260724",
+          "close": 72100,
+          "foreign": -89147,
+          "inst": -124306,
+          "retail": 209421
+        },
+        {
+          "date": "20260723",
+          "close": 73200,
+          "foreign": 195539,
+          "inst": 54397,
+          "retail": -248049
+        },
+        {
+          "date": "20260722",
+          "close": 69200,
+          "foreign": 482817,
+          "inst": -49485,
+          "retail": -465597
+        },
+        {
+          "date": "20260721",
+          "close": 66800,
+          "foreign": 539303,
+          "inst": -227235,
+          "retail": -310261
+        },
+        {
+          "date": "20260720",
+          "close": 64800,
+          "foreign": 250746,
+          "inst": -2863,
+          "retail": -251444
+        },
+        {
+          "date": "20260716",
+          "close": 69700,
+          "foreign": -163280,
+          "inst": -19212,
+          "retail": 165835
+        }
+      ]
+    },
+    "012330": {
+      "code": "012330",
+      "name": "현대모비스",
+      "price": 425500,
+      "chg": -8.2,
+      "vol": 146812,
+      "foreignRatio": 37.16,
+      "themes": [],
+      "sumF": 260531,
+      "sumI": -5316,
+      "sumR": -447128,
+      "cmf": 0.36,
+      "vwapGap": -5.3,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 463500,
+          "foreign": -43924,
+          "inst": -39273,
+          "retail": 82190
+        },
+        {
+          "date": "20260724",
+          "close": 482000,
+          "foreign": -12379,
+          "inst": -49233,
+          "retail": 63245
+        },
+        {
+          "date": "20260723",
+          "close": 524000,
+          "foreign": 5581,
+          "inst": -1580,
+          "retail": -5879
+        },
+        {
+          "date": "20260722",
+          "close": 513000,
+          "foreign": -1762,
+          "inst": 86970,
+          "retail": -84964
+        },
+        {
+          "date": "20260721",
+          "close": 479500,
+          "foreign": 19673,
+          "inst": -11130,
+          "retail": -17945
+        },
+        {
+          "date": "20260720",
+          "close": 472500,
+          "foreign": 53106,
+          "inst": -16436,
+          "retail": -42125
+        },
+        {
+          "date": "20260716",
+          "close": 482000,
+          "foreign": 16847,
+          "inst": -10418,
+          "retail": -10931
+        }
+      ]
+    },
+    "034730": {
+      "code": "034730",
+      "name": "SK",
+      "price": 526000,
+      "chg": -15.57,
+      "vol": 144462,
+      "foreignRatio": 29.62,
+      "themes": [],
+      "sumF": -66612,
+      "sumI": 145696,
+      "sumR": -93590,
+      "cmf": 0.46,
+      "vwapGap": -3.8,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 623000,
+          "foreign": -21460,
+          "inst": 27472,
+          "retail": -4331
+        },
+        {
+          "date": "20260724",
+          "close": 630000,
+          "foreign": -25707,
+          "inst": 9332,
+          "retail": 16068
+        },
+        {
+          "date": "20260723",
+          "close": 655000,
+          "foreign": -44244,
+          "inst": 24204,
+          "retail": 15954
+        },
+        {
+          "date": "20260722",
+          "close": 624000,
+          "foreign": 2920,
+          "inst": 1946,
+          "retail": -4561
+        },
+        {
+          "date": "20260721",
+          "close": 596000,
+          "foreign": -24286,
+          "inst": 26548,
+          "retail": -2366
+        },
+        {
+          "date": "20260720",
+          "close": 579000,
+          "foreign": -33180,
+          "inst": 48386,
+          "retail": -15346
+        },
+        {
+          "date": "20260716",
+          "close": 580000,
+          "foreign": 18442,
+          "inst": -3724,
+          "retail": -14407
+        }
+      ]
+    },
     "086790": {
       "code": "086790",
       "name": "KOSPI200",
-      "price": 130600,
-      "chg": -1.36,
-      "vol": 701204,
+      "price": 125300,
+      "chg": -4.06,
+      "vol": 449463,
       "foreignRatio": 68.5,
       "themes": [],
       "sumF": -485600,
@@ -1374,10 +1374,10 @@
     "035420": {
       "code": "035420",
       "name": "NAVER",
-      "price": 225000,
-      "chg": 8.43,
-      "vol": 2705093,
-      "foreignRatio": 34.73,
+      "price": 212000,
+      "chg": -5.78,
+      "vol": 1622359,
+      "foreignRatio": 34.74,
       "themes": [],
       "sumF": 114554,
       "sumI": 1020682,
@@ -1385,8 +1385,8 @@
       "cmf": 0.49,
       "vwapGap": 14.3,
       "adTrend": "up",
-      "volDiverge": false,
-      "scenario": "accumulate",
+      "volDiverge": true,
+      "scenario": "stealth",
       "days": [
         {
           "date": "20260727",
@@ -1442,10 +1442,10 @@
     "006400": {
       "code": "006400",
       "name": "삼성SDI",
-      "price": 431000,
-      "chg": 0.7,
-      "vol": 211006,
-      "foreignRatio": 26.37,
+      "price": 389000,
+      "chg": -9.74,
+      "vol": 210265,
+      "foreignRatio": 26.38,
       "themes": [],
       "sumF": -264271,
       "sumI": 263422,
@@ -1453,8 +1453,8 @@
       "cmf": -0.07,
       "vwapGap": -3.0,
       "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
+      "volDiverge": false,
+      "scenario": "exit",
       "days": [
         {
           "date": "20260727",
@@ -1507,12 +1507,80 @@
         }
       ]
     },
+    "000810": {
+      "code": "000810",
+      "name": "KOSPI200",
+      "price": 618000,
+      "chg": -4.19,
+      "vol": 37956,
+      "foreignRatio": 58.18,
+      "themes": [],
+      "sumF": -101429,
+      "sumI": 121571,
+      "sumR": -17947,
+      "cmf": 0.53,
+      "vwapGap": 0.6,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 645000,
+          "foreign": -29,
+          "inst": 81,
+          "retail": -135
+        },
+        {
+          "date": "20260724",
+          "close": 644000,
+          "foreign": 748,
+          "inst": 1195,
+          "retail": -1848
+        },
+        {
+          "date": "20260723",
+          "close": 638000,
+          "foreign": 8250,
+          "inst": -6969,
+          "retail": -1218
+        },
+        {
+          "date": "20260722",
+          "close": 630000,
+          "foreign": 12419,
+          "inst": -9645,
+          "retail": -3180
+        },
+        {
+          "date": "20260721",
+          "close": 618000,
+          "foreign": 7555,
+          "inst": -6937,
+          "retail": -692
+        },
+        {
+          "date": "20260720",
+          "close": 602000,
+          "foreign": -28854,
+          "inst": 14570,
+          "retail": 14188
+        },
+        {
+          "date": "20260716",
+          "close": 701000,
+          "foreign": -24736,
+          "inst": 33995,
+          "retail": -9108
+        }
+      ]
+    },
     "010120": {
       "code": "010120",
       "name": "LS ELECTRIC",
-      "price": 200000,
-      "chg": -0.99,
-      "vol": 653935,
+      "price": 176600,
+      "chg": -11.7,
+      "vol": 470818,
       "foreignRatio": 17.99,
       "themes": [
         "전력설비"
@@ -1577,80 +1645,80 @@
         }
       ]
     },
-    "000810": {
-      "code": "000810",
-      "name": "KOSPI200",
-      "price": 645000,
-      "chg": 0.16,
-      "vol": 69591,
-      "foreignRatio": 58.18,
+    "066570": {
+      "code": "066570",
+      "name": "LG전자",
+      "price": 156900,
+      "chg": -8.94,
+      "vol": 523934,
+      "foreignRatio": 28.92,
       "themes": [],
-      "sumF": -101429,
-      "sumI": 121571,
-      "sumR": -17947,
-      "cmf": 0.53,
-      "vwapGap": 0.6,
+      "sumF": 328791,
+      "sumI": 612037,
+      "sumR": -933969,
+      "cmf": 0.5,
+      "vwapGap": -7.0,
       "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
+      "volDiverge": true,
+      "scenario": "stealth",
       "days": [
         {
           "date": "20260727",
-          "close": 645000,
-          "foreign": -29,
-          "inst": 81,
-          "retail": -135
+          "close": 172300,
+          "foreign": -44272,
+          "inst": 30331,
+          "retail": 13623
         },
         {
           "date": "20260724",
-          "close": 644000,
-          "foreign": 748,
-          "inst": 1195,
-          "retail": -1848
+          "close": 169200,
+          "foreign": -234445,
+          "inst": -188135,
+          "retail": 425392
         },
         {
           "date": "20260723",
-          "close": 638000,
-          "foreign": 8250,
-          "inst": -6969,
-          "retail": -1218
+          "close": 187500,
+          "foreign": -66977,
+          "inst": -689,
+          "retail": 64041
         },
         {
           "date": "20260722",
-          "close": 630000,
-          "foreign": 12419,
-          "inst": -9645,
-          "retail": -3180
+          "close": 182700,
+          "foreign": 353264,
+          "inst": 11185,
+          "retail": -369554
         },
         {
           "date": "20260721",
-          "close": 618000,
-          "foreign": 7555,
-          "inst": -6937,
-          "retail": -692
+          "close": 173200,
+          "foreign": 196381,
+          "inst": 64943,
+          "retail": -263489
         },
         {
           "date": "20260720",
-          "close": 602000,
-          "foreign": -28854,
-          "inst": 14570,
-          "retail": 14188
+          "close": 167200,
+          "foreign": -3555,
+          "inst": 53299,
+          "retail": -48260
         },
         {
           "date": "20260716",
-          "close": 701000,
-          "foreign": -24736,
-          "inst": 33995,
-          "retail": -9108
+          "close": 179000,
+          "foreign": -289065,
+          "inst": -60694,
+          "retail": 347092
         }
       ]
     },
     "267260": {
       "code": "267260",
       "name": "HD현대일렉트릭",
-      "price": 797000,
-      "chg": -1.6,
-      "vol": 82155,
+      "price": 706000,
+      "chg": -11.42,
+      "vol": 92084,
       "foreignRatio": 34.36,
       "themes": [
         "전력설비"
@@ -1715,150 +1783,12 @@
         }
       ]
     },
-    "066570": {
-      "code": "066570",
-      "name": "LG전자",
-      "price": 172300,
-      "chg": 1.83,
-      "vol": 873829,
-      "foreignRatio": 28.91,
-      "themes": [],
-      "sumF": 328791,
-      "sumI": 612037,
-      "sumR": -933969,
-      "cmf": 0.5,
-      "vwapGap": -7.0,
-      "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 172300,
-          "foreign": -44272,
-          "inst": 30331,
-          "retail": 13623
-        },
-        {
-          "date": "20260724",
-          "close": 169200,
-          "foreign": -234445,
-          "inst": -188135,
-          "retail": 425392
-        },
-        {
-          "date": "20260723",
-          "close": 187500,
-          "foreign": -66977,
-          "inst": -689,
-          "retail": 64041
-        },
-        {
-          "date": "20260722",
-          "close": 182700,
-          "foreign": 353264,
-          "inst": 11185,
-          "retail": -369554
-        },
-        {
-          "date": "20260721",
-          "close": 173200,
-          "foreign": 196381,
-          "inst": 64943,
-          "retail": -263489
-        },
-        {
-          "date": "20260720",
-          "close": 167200,
-          "foreign": -3555,
-          "inst": 53299,
-          "retail": -48260
-        },
-        {
-          "date": "20260716",
-          "close": 179000,
-          "foreign": -289065,
-          "inst": -60694,
-          "retail": 347092
-        }
-      ]
-    },
-    "042660": {
-      "code": "042660",
-      "name": "한화오션",
-      "price": 88800,
-      "chg": 1.02,
-      "vol": 2046688,
-      "foreignRatio": 9.36,
-      "themes": [
-        "조선"
-      ],
-      "sumF": -3402219,
-      "sumI": -24824,
-      "sumR": 3369304,
-      "cmf": -0.5,
-      "vwapGap": -1.8,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 88800,
-          "foreign": -50518,
-          "inst": -49650,
-          "retail": 97617
-        },
-        {
-          "date": "20260724",
-          "close": 87900,
-          "foreign": -71870,
-          "inst": -125764,
-          "retail": 200550
-        },
-        {
-          "date": "20260723",
-          "close": 89900,
-          "foreign": 474345,
-          "inst": 38061,
-          "retail": -515542
-        },
-        {
-          "date": "20260722",
-          "close": 83900,
-          "foreign": 296956,
-          "inst": 178833,
-          "retail": -478251
-        },
-        {
-          "date": "20260721",
-          "close": 81900,
-          "foreign": 13791,
-          "inst": -11639,
-          "retail": -1764
-        },
-        {
-          "date": "20260720",
-          "close": 83200,
-          "foreign": -603415,
-          "inst": 104426,
-          "retail": 494910
-        },
-        {
-          "date": "20260716",
-          "close": 86700,
-          "foreign": -576091,
-          "inst": 82418,
-          "retail": 489555
-        }
-      ]
-    },
     "009540": {
       "code": "009540",
       "name": "HD한국조선해양",
-      "price": 378500,
-      "chg": 1.75,
-      "vol": 161515,
+      "price": 356000,
+      "chg": -5.94,
+      "vol": 81619,
       "foreignRatio": 33.45,
       "themes": [
         "조선"
@@ -1869,8 +1799,8 @@
       "cmf": 0.49,
       "vwapGap": 7.4,
       "adTrend": "up",
-      "volDiverge": false,
-      "scenario": "accumulate",
+      "volDiverge": true,
+      "scenario": "stealth",
       "days": [
         {
           "date": "20260727",
@@ -1923,12 +1853,82 @@
         }
       ]
     },
+    "042660": {
+      "code": "042660",
+      "name": "한화오션",
+      "price": 81600,
+      "chg": -8.11,
+      "vol": 857720,
+      "foreignRatio": 9.36,
+      "themes": [
+        "조선"
+      ],
+      "sumF": -3402219,
+      "sumI": -24824,
+      "sumR": 3369304,
+      "cmf": -0.5,
+      "vwapGap": -1.8,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 88800,
+          "foreign": -50518,
+          "inst": -49650,
+          "retail": 97617
+        },
+        {
+          "date": "20260724",
+          "close": 87900,
+          "foreign": -71870,
+          "inst": -125764,
+          "retail": 200550
+        },
+        {
+          "date": "20260723",
+          "close": 89900,
+          "foreign": 474345,
+          "inst": 38061,
+          "retail": -515542
+        },
+        {
+          "date": "20260722",
+          "close": 83900,
+          "foreign": 296956,
+          "inst": 178833,
+          "retail": -478251
+        },
+        {
+          "date": "20260721",
+          "close": 81900,
+          "foreign": 13791,
+          "inst": -11639,
+          "retail": -1764
+        },
+        {
+          "date": "20260720",
+          "close": 83200,
+          "foreign": -603415,
+          "inst": 104426,
+          "retail": 494910
+        },
+        {
+          "date": "20260716",
+          "close": 86700,
+          "foreign": -576091,
+          "inst": 82418,
+          "retail": 489555
+        }
+      ]
+    },
     "005490": {
       "code": "005490",
       "name": "POSCO홀딩스",
-      "price": 316000,
-      "chg": 0.96,
-      "vol": 201640,
+      "price": 300000,
+      "chg": -5.06,
+      "vol": 138233,
       "foreignRatio": 32.46,
       "themes": [
         "2차전지"
@@ -1939,8 +1939,8 @@
       "cmf": 0.51,
       "vwapGap": 1.1,
       "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
+      "volDiverge": true,
+      "scenario": "stealth",
       "days": [
         {
           "date": "20260727",
@@ -1993,12 +1993,2128 @@
         }
       ]
     },
+    "316140": {
+      "code": "316140",
+      "name": "KOSPI200",
+      "price": 32500,
+      "chg": -1.81,
+      "vol": 1289565,
+      "foreignRatio": 46.07,
+      "themes": [],
+      "sumF": 505586,
+      "sumI": 2612301,
+      "sumR": -3251710,
+      "cmf": 0.49,
+      "vwapGap": 7.7,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 33100,
+          "foreign": 861208,
+          "inst": 625222,
+          "retail": -1478543
+        },
+        {
+          "date": "20260724",
+          "close": 30850,
+          "foreign": 103010,
+          "inst": -257482,
+          "retail": 150515
+        },
+        {
+          "date": "20260723",
+          "close": 30900,
+          "foreign": 240381,
+          "inst": -278649,
+          "retail": 28262
+        },
+        {
+          "date": "20260722",
+          "close": 30650,
+          "foreign": 152777,
+          "inst": -134722,
+          "retail": -8835
+        },
+        {
+          "date": "20260721",
+          "close": 30500,
+          "foreign": -148802,
+          "inst": 48321,
+          "retail": -62713
+        },
+        {
+          "date": "20260720",
+          "close": 30550,
+          "foreign": -226604,
+          "inst": 243979,
+          "retail": -14564
+        },
+        {
+          "date": "20260716",
+          "close": 31500,
+          "foreign": 20932,
+          "inst": 92592,
+          "retail": -113545
+        }
+      ]
+    },
+    "196170": {
+      "code": "196170",
+      "name": "알테오젠",
+      "price": 291000,
+      "chg": -6.73,
+      "vol": 180812,
+      "foreignRatio": 14.81,
+      "themes": [],
+      "sumF": -26436,
+      "sumI": 45769,
+      "sumR": 20181,
+      "cmf": 0.49,
+      "vwapGap": -0.7,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 312000,
+          "foreign": -59068,
+          "inst": 106802,
+          "retail": -47151
+        },
+        {
+          "date": "20260724",
+          "close": 300500,
+          "foreign": 31856,
+          "inst": -10709,
+          "retail": -20888
+        },
+        {
+          "date": "20260723",
+          "close": 306500,
+          "foreign": 136160,
+          "inst": 70910,
+          "retail": -209550
+        },
+        {
+          "date": "20260722",
+          "close": 268000,
+          "foreign": 37362,
+          "inst": -67462,
+          "retail": 29624
+        },
+        {
+          "date": "20260721",
+          "close": 273000,
+          "foreign": 43191,
+          "inst": 33978,
+          "retail": -76045
+        },
+        {
+          "date": "20260720",
+          "close": 269500,
+          "foreign": -8196,
+          "inst": -28794,
+          "retail": 46134
+        },
+        {
+          "date": "20260716",
+          "close": 276500,
+          "foreign": 14677,
+          "inst": -51697,
+          "retail": 37489
+        }
+      ]
+    },
+    "086520": {
+      "code": "086520",
+      "name": "에코프로",
+      "price": 73800,
+      "chg": -8.44,
+      "vol": 280417,
+      "foreignRatio": 19.23,
+      "themes": [],
+      "sumF": -1696153,
+      "sumI": 784327,
+      "sumR": 899987,
+      "cmf": -0.5,
+      "vwapGap": -5.3,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 80600,
+          "foreign": -172181,
+          "inst": 126408,
+          "retail": 44875
+        },
+        {
+          "date": "20260724",
+          "close": 78100,
+          "foreign": -73367,
+          "inst": -133188,
+          "retail": 206800
+        },
+        {
+          "date": "20260723",
+          "close": 84300,
+          "foreign": 1776,
+          "inst": 239505,
+          "retail": -238587
+        },
+        {
+          "date": "20260722",
+          "close": 77100,
+          "foreign": 136450,
+          "inst": -32838,
+          "retail": -103129
+        },
+        {
+          "date": "20260721",
+          "close": 75200,
+          "foreign": 47374,
+          "inst": 35317,
+          "retail": -81112
+        },
+        {
+          "date": "20260720",
+          "close": 73500,
+          "foreign": -41412,
+          "inst": -94916,
+          "retail": 137587
+        },
+        {
+          "date": "20260716",
+          "close": 80000,
+          "foreign": -149136,
+          "inst": -148373,
+          "retail": 299001
+        }
+      ]
+    },
+    "247540": {
+      "code": "247540",
+      "name": "에코프로비엠",
+      "price": 101700,
+      "chg": -7.96,
+      "vol": 127301,
+      "foreignRatio": 14.86,
+      "themes": [
+        "2차전지"
+      ],
+      "sumF": 58278,
+      "sumI": 503110,
+      "sumR": -556631,
+      "cmf": 0.5,
+      "vwapGap": -7.4,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 110500,
+          "foreign": -93785,
+          "inst": 81075,
+          "retail": 12362
+        },
+        {
+          "date": "20260724",
+          "close": 108300,
+          "foreign": -17809,
+          "inst": -72901,
+          "retail": 90426
+        },
+        {
+          "date": "20260723",
+          "close": 118200,
+          "foreign": -37207,
+          "inst": 108851,
+          "retail": -72231
+        },
+        {
+          "date": "20260722",
+          "close": 107500,
+          "foreign": 74096,
+          "inst": -49840,
+          "retail": -23920
+        },
+        {
+          "date": "20260721",
+          "close": 105900,
+          "foreign": -3728,
+          "inst": 53402,
+          "retail": -49571
+        },
+        {
+          "date": "20260720",
+          "close": 104100,
+          "foreign": 6018,
+          "inst": -22188,
+          "retail": 17510
+        },
+        {
+          "date": "20260716",
+          "close": 112400,
+          "foreign": 17632,
+          "inst": -71597,
+          "retail": 53807
+        }
+      ]
+    },
+    "277810": {
+      "code": "277810",
+      "name": "레인보우로보틱스",
+      "price": 399500,
+      "chg": -10.43,
+      "vol": 72282,
+      "foreignRatio": 5.31,
+      "themes": [
+        "로봇"
+      ],
+      "sumF": -291045,
+      "sumI": 65203,
+      "sumR": 227071,
+      "cmf": -0.5,
+      "vwapGap": -1.6,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 446000,
+          "foreign": -44,
+          "inst": 21293,
+          "retail": -20177
+        },
+        {
+          "date": "20260724",
+          "close": 418500,
+          "foreign": -114540,
+          "inst": -45046,
+          "retail": 159187
+        },
+        {
+          "date": "20260723",
+          "close": 508000,
+          "foreign": -35998,
+          "inst": 10743,
+          "retail": 25964
+        },
+        {
+          "date": "20260722",
+          "close": 478500,
+          "foreign": -94409,
+          "inst": 24162,
+          "retail": 63615
+        },
+        {
+          "date": "20260721",
+          "close": 411500,
+          "foreign": -44384,
+          "inst": 9346,
+          "retail": 33675
+        },
+        {
+          "date": "20260720",
+          "close": 375000,
+          "foreign": 1485,
+          "inst": -1113,
+          "retail": -74
+        },
+        {
+          "date": "20260716",
+          "close": 397000,
+          "foreign": -10658,
+          "inst": -7622,
+          "retail": 18098
+        }
+      ]
+    },
+    "036930": {
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "price": 130600,
+      "chg": -12.88,
+      "vol": 618430,
+      "foreignRatio": 6.6,
+      "themes": [],
+      "sumF": -1262363,
+      "sumI": 2234595,
+      "sumR": -953623,
+      "cmf": 0.5,
+      "vwapGap": -17.9,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 149900,
+          "foreign": 30962,
+          "inst": 96328,
+          "retail": -128066
+        },
+        {
+          "date": "20260724",
+          "close": 141000,
+          "foreign": 58894,
+          "inst": -107608,
+          "retail": 51528
+        },
+        {
+          "date": "20260723",
+          "close": 163900,
+          "foreign": -31863,
+          "inst": -66627,
+          "retail": 99764
+        },
+        {
+          "date": "20260722",
+          "close": 162000,
+          "foreign": -115216,
+          "inst": -132250,
+          "retail": 247873
+        },
+        {
+          "date": "20260721",
+          "close": 169200,
+          "foreign": -129138,
+          "inst": 11759,
+          "retail": 120832
+        },
+        {
+          "date": "20260720",
+          "close": 167900,
+          "foreign": -7608,
+          "inst": -115571,
+          "retail": 122939
+        },
+        {
+          "date": "20260716",
+          "close": 187900,
+          "foreign": -225435,
+          "inst": -26352,
+          "retail": 248864
+        }
+      ]
+    },
+    "058470": {
+      "code": "058470",
+      "name": "리노공업",
+      "price": 62100,
+      "chg": -11.03,
+      "vol": 206664,
+      "foreignRatio": 32.37,
+      "themes": [],
+      "sumF": 4330271,
+      "sumI": -4735338,
+      "sumR": 356914,
+      "cmf": -0.53,
+      "vwapGap": -5.9,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 69800,
+          "foreign": -50445,
+          "inst": 62762,
+          "retail": -12005
+        },
+        {
+          "date": "20260724",
+          "close": 68600,
+          "foreign": -11846,
+          "inst": -72678,
+          "retail": 81104
+        },
+        {
+          "date": "20260723",
+          "close": 73900,
+          "foreign": 32508,
+          "inst": 9980,
+          "retail": -41871
+        },
+        {
+          "date": "20260722",
+          "close": 71800,
+          "foreign": 196001,
+          "inst": -93779,
+          "retail": -97921
+        },
+        {
+          "date": "20260721",
+          "close": 70000,
+          "foreign": -38363,
+          "inst": 41957,
+          "retail": -3131
+        },
+        {
+          "date": "20260720",
+          "close": 69100,
+          "foreign": 111948,
+          "inst": -103522,
+          "retail": -6181
+        },
+        {
+          "date": "20260716",
+          "close": 72300,
+          "foreign": 25616,
+          "inst": -71184,
+          "retail": 43153
+        }
+      ]
+    },
+    "240810": {
+      "code": "240810",
+      "name": "원익IPS",
+      "price": 90100,
+      "chg": -15.0,
+      "vol": 536851,
+      "foreignRatio": 14.14,
+      "themes": [],
+      "sumF": -1153139,
+      "sumI": -473721,
+      "sumR": 1542968,
+      "cmf": -0.51,
+      "vwapGap": -16.0,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 106000,
+          "foreign": 8778,
+          "inst": 85258,
+          "retail": -93861
+        },
+        {
+          "date": "20260724",
+          "close": 100500,
+          "foreign": 33859,
+          "inst": -195598,
+          "retail": 168062
+        },
+        {
+          "date": "20260723",
+          "close": 113300,
+          "foreign": 94039,
+          "inst": -80340,
+          "retail": -2249
+        },
+        {
+          "date": "20260722",
+          "close": 111700,
+          "foreign": -204013,
+          "inst": -60245,
+          "retail": 240207
+        },
+        {
+          "date": "20260721",
+          "close": 116100,
+          "foreign": 30033,
+          "inst": -28492,
+          "retail": -7324
+        },
+        {
+          "date": "20260720",
+          "close": 115100,
+          "foreign": -397795,
+          "inst": -37502,
+          "retail": 434210
+        },
+        {
+          "date": "20260716",
+          "close": 140700,
+          "foreign": -251779,
+          "inst": 208664,
+          "retail": 37569
+        }
+      ]
+    },
+    "028300": {
+      "code": "028300",
+      "name": "HLB",
+      "price": 30300,
+      "chg": -3.66,
+      "vol": 304404,
+      "foreignRatio": 18.2,
+      "themes": [],
+      "sumF": -2001315,
+      "sumI": -20110,
+      "sumR": 2001459,
+      "cmf": -0.5,
+      "vwapGap": -20.6,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 31450,
+          "foreign": -25779,
+          "inst": 231258,
+          "retail": -205362
+        },
+        {
+          "date": "20260724",
+          "close": 31300,
+          "foreign": -261394,
+          "inst": -121397,
+          "retail": 383594
+        },
+        {
+          "date": "20260723",
+          "close": 30000,
+          "foreign": 130777,
+          "inst": 108426,
+          "retail": -228283
+        },
+        {
+          "date": "20260722",
+          "close": 28300,
+          "foreign": -227506,
+          "inst": -238583,
+          "retail": 442188
+        },
+        {
+          "date": "20260721",
+          "close": 30400,
+          "foreign": -208708,
+          "inst": 15744,
+          "retail": 195604
+        },
+        {
+          "date": "20260720",
+          "close": 30550,
+          "foreign": -114714,
+          "inst": -68449,
+          "retail": 178709
+        },
+        {
+          "date": "20260716",
+          "close": 35300,
+          "foreign": -290820,
+          "inst": -182360,
+          "retail": 473067
+        }
+      ]
+    },
+    "298380": {
+      "code": "298380",
+      "name": "에이비엘바이오",
+      "price": 68700,
+      "chg": -5.37,
+      "vol": 125990,
+      "foreignRatio": 13.69,
+      "themes": [],
+      "sumF": 360470,
+      "sumI": 224080,
+      "sumR": -553662,
+      "cmf": 0.51,
+      "vwapGap": -12.8,
+      "adTrend": "up",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 72600,
+          "foreign": -43774,
+          "inst": 51351,
+          "retail": -7641
+        },
+        {
+          "date": "20260724",
+          "close": 72400,
+          "foreign": -3929,
+          "inst": 1857,
+          "retail": 2528
+        },
+        {
+          "date": "20260723",
+          "close": 74300,
+          "foreign": 30185,
+          "inst": 50978,
+          "retail": -80622
+        },
+        {
+          "date": "20260722",
+          "close": 69400,
+          "foreign": 132514,
+          "inst": -117951,
+          "retail": -13675
+        },
+        {
+          "date": "20260721",
+          "close": 69300,
+          "foreign": 106435,
+          "inst": -105019,
+          "retail": 773
+        },
+        {
+          "date": "20260720",
+          "close": 70200,
+          "foreign": 56443,
+          "inst": -45393,
+          "retail": -11181
+        },
+        {
+          "date": "20260716",
+          "close": 75600,
+          "foreign": 53672,
+          "inst": -45971,
+          "retail": -1649
+        }
+      ]
+    },
+    "214450": {
+      "code": "214450",
+      "name": "파마리서치",
+      "price": 361500,
+      "chg": -2.3,
+      "vol": 122360,
+      "foreignRatio": 6.64,
+      "themes": [],
+      "sumF": -205292,
+      "sumI": 573533,
+      "sumR": -371257,
+      "cmf": 0.5,
+      "vwapGap": 9.1,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 370000,
+          "foreign": -27515,
+          "inst": 61336,
+          "retail": -32864
+        },
+        {
+          "date": "20260724",
+          "close": 357000,
+          "foreign": -6589,
+          "inst": 22512,
+          "retail": -17129
+        },
+        {
+          "date": "20260723",
+          "close": 360000,
+          "foreign": 29019,
+          "inst": 46997,
+          "retail": -75649
+        },
+        {
+          "date": "20260722",
+          "close": 322500,
+          "foreign": -3492,
+          "inst": -23288,
+          "retail": 27168
+        },
+        {
+          "date": "20260721",
+          "close": 341500,
+          "foreign": -7193,
+          "inst": 26210,
+          "retail": -19029
+        },
+        {
+          "date": "20260720",
+          "close": 327000,
+          "foreign": 15013,
+          "inst": 2140,
+          "retail": -15177
+        },
+        {
+          "date": "20260716",
+          "close": 336500,
+          "foreign": -6359,
+          "inst": 21145,
+          "retail": -17172
+        }
+      ]
+    },
+    "319660": {
+      "code": "319660",
+      "name": "KSQ150",
+      "price": 125300,
+      "chg": -14.18,
+      "vol": 204207,
+      "foreignRatio": 21.03,
+      "themes": [],
+      "sumF": -948485,
+      "sumI": 814249,
+      "sumR": 157171,
+      "cmf": -0.46,
+      "vwapGap": -16.8,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 146000,
+          "foreign": 3479,
+          "inst": 782,
+          "retail": -2688
+        },
+        {
+          "date": "20260724",
+          "close": 143900,
+          "foreign": 161887,
+          "inst": -160396,
+          "retail": 4649
+        },
+        {
+          "date": "20260723",
+          "close": 157000,
+          "foreign": 109489,
+          "inst": -82475,
+          "retail": -26983
+        },
+        {
+          "date": "20260722",
+          "close": 156700,
+          "foreign": -20336,
+          "inst": -42087,
+          "retail": 63149
+        },
+        {
+          "date": "20260721",
+          "close": 170000,
+          "foreign": 24234,
+          "inst": -30645,
+          "retail": 6665
+        },
+        {
+          "date": "20260720",
+          "close": 170800,
+          "foreign": -120519,
+          "inst": 96447,
+          "retail": 23833
+        },
+        {
+          "date": "20260716",
+          "close": 195400,
+          "foreign": -44391,
+          "inst": 14039,
+          "retail": 31745
+        }
+      ]
+    },
+    "141080": {
+      "code": "141080",
+      "name": "리가켐바이오",
+      "price": 89200,
+      "chg": -8.61,
+      "vol": 94343,
+      "foreignRatio": 11.47,
+      "themes": [],
+      "sumF": 537901,
+      "sumI": -475010,
+      "sumR": -8173,
+      "cmf": 0.88,
+      "vwapGap": -17.8,
+      "adTrend": "up",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 97600,
+          "foreign": -34374,
+          "inst": 39454,
+          "retail": -1497
+        },
+        {
+          "date": "20260724",
+          "close": 96100,
+          "foreign": 33206,
+          "inst": -29924,
+          "retail": 5657
+        },
+        {
+          "date": "20260723",
+          "close": 101700,
+          "foreign": -7138,
+          "inst": 29450,
+          "retail": -21463
+        },
+        {
+          "date": "20260722",
+          "close": 93900,
+          "foreign": 79202,
+          "inst": -55753,
+          "retail": -18348
+        },
+        {
+          "date": "20260721",
+          "close": 93600,
+          "foreign": 271679,
+          "inst": -257897,
+          "retail": 14800
+        },
+        {
+          "date": "20260720",
+          "close": 97100,
+          "foreign": 58884,
+          "inst": -54203,
+          "retail": -5048
+        },
+        {
+          "date": "20260716",
+          "close": 103700,
+          "foreign": 100058,
+          "inst": -71068,
+          "retail": -25251
+        }
+      ]
+    },
+    "039030": {
+      "code": "039030",
+      "name": "이오테크닉스",
+      "price": 266500,
+      "chg": -13.75,
+      "vol": 51039,
+      "foreignRatio": 30.29,
+      "themes": [
+        "HBM반도체"
+      ],
+      "sumF": 599069,
+      "sumI": -755970,
+      "sumR": 148489,
+      "cmf": -0.51,
+      "vwapGap": -15.4,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 309000,
+          "foreign": 2152,
+          "inst": 4412,
+          "retail": -6676
+        },
+        {
+          "date": "20260724",
+          "close": 298500,
+          "foreign": 9516,
+          "inst": -17366,
+          "retail": 7378
+        },
+        {
+          "date": "20260723",
+          "close": 328500,
+          "foreign": -6963,
+          "inst": 16653,
+          "retail": -9306
+        },
+        {
+          "date": "20260722",
+          "close": 308500,
+          "foreign": 13145,
+          "inst": -4338,
+          "retail": -8389
+        },
+        {
+          "date": "20260721",
+          "close": 317500,
+          "foreign": 10274,
+          "inst": -15116,
+          "retail": 4627
+        },
+        {
+          "date": "20260720",
+          "close": 317000,
+          "foreign": 46987,
+          "inst": -41745,
+          "retail": -5876
+        },
+        {
+          "date": "20260716",
+          "close": 344000,
+          "foreign": 10623,
+          "inst": -20999,
+          "retail": 10440
+        }
+      ]
+    },
+    "000250": {
+      "code": "000250",
+      "name": "삼천당제약",
+      "price": 135600,
+      "chg": -9.24,
+      "vol": 131718,
+      "foreignRatio": 4.85,
+      "themes": [],
+      "sumF": -507829,
+      "sumI": -83872,
+      "sumR": 571903,
+      "cmf": -0.51,
+      "vwapGap": -22.5,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 149400,
+          "foreign": 4506,
+          "inst": 38475,
+          "retail": -43154
+        },
+        {
+          "date": "20260724",
+          "close": 148800,
+          "foreign": -49804,
+          "inst": -8240,
+          "retail": 56373
+        },
+        {
+          "date": "20260723",
+          "close": 166100,
+          "foreign": 2836,
+          "inst": 10998,
+          "retail": -14416
+        },
+        {
+          "date": "20260722",
+          "close": 152800,
+          "foreign": -55199,
+          "inst": -29191,
+          "retail": 76837
+        },
+        {
+          "date": "20260721",
+          "close": 167800,
+          "foreign": -438987,
+          "inst": -94854,
+          "retail": 525525
+        },
+        {
+          "date": "20260720",
+          "close": 239000,
+          "foreign": -9282,
+          "inst": -11117,
+          "retail": 19868
+        },
+        {
+          "date": "20260716",
+          "close": 184100,
+          "foreign": 11965,
+          "inst": -12652,
+          "retail": 610
+        }
+      ]
+    },
+    "145020": {
+      "code": "145020",
+      "name": "휴젤",
+      "price": 235500,
+      "chg": -3.09,
+      "vol": 15440,
+      "foreignRatio": 56.49,
+      "themes": [],
+      "sumF": -40858,
+      "sumI": 31405,
+      "sumR": 7218,
+      "cmf": -0.57,
+      "vwapGap": -0.6,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 243000,
+          "foreign": -13442,
+          "inst": 18606,
+          "retail": -5165
+        },
+        {
+          "date": "20260724",
+          "close": 234500,
+          "foreign": 5770,
+          "inst": -5942,
+          "retail": 169
+        },
+        {
+          "date": "20260723",
+          "close": 241500,
+          "foreign": 10299,
+          "inst": 14252,
+          "retail": -24214
+        },
+        {
+          "date": "20260722",
+          "close": 221500,
+          "foreign": -11410,
+          "inst": -11766,
+          "retail": 23067
+        },
+        {
+          "date": "20260721",
+          "close": 228500,
+          "foreign": 953,
+          "inst": -3781,
+          "retail": 2856
+        },
+        {
+          "date": "20260720",
+          "close": 230000,
+          "foreign": 1893,
+          "inst": -4235,
+          "retail": 2248
+        },
+        {
+          "date": "20260716",
+          "close": 239500,
+          "foreign": 9295,
+          "inst": -1405,
+          "retail": -7788
+        }
+      ]
+    },
+    "214370": {
+      "code": "214370",
+      "name": "케어젠",
+      "price": 54200,
+      "chg": -9.21,
+      "vol": 36661,
+      "foreignRatio": 4.38,
+      "themes": [],
+      "sumF": 100461,
+      "sumI": 43649,
+      "sumR": -146512,
+      "cmf": 0.5,
+      "vwapGap": -5.9,
+      "adTrend": "up",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 59700,
+          "foreign": -7268,
+          "inst": 17857,
+          "retail": -10589
+        },
+        {
+          "date": "20260724",
+          "close": 56700,
+          "foreign": 20284,
+          "inst": -12016,
+          "retail": -8069
+        },
+        {
+          "date": "20260723",
+          "close": 57600,
+          "foreign": 1364,
+          "inst": 7946,
+          "retail": -9310
+        },
+        {
+          "date": "20260722",
+          "close": 55100,
+          "foreign": 24363,
+          "inst": -18728,
+          "retail": -5134
+        },
+        {
+          "date": "20260721",
+          "close": 56500,
+          "foreign": 25698,
+          "inst": 2443,
+          "retail": -30013
+        },
+        {
+          "date": "20260720",
+          "close": 60000,
+          "foreign": 11923,
+          "inst": -2736,
+          "retail": -9187
+        },
+        {
+          "date": "20260716",
+          "close": 61700,
+          "foreign": 45288,
+          "inst": -45234,
+          "retail": -189
+        }
+      ]
+    },
+    "440110": {
+      "code": "440110",
+      "name": "파두",
+      "price": 57300,
+      "chg": -11.71,
+      "vol": 681964,
+      "foreignRatio": 27.35,
+      "themes": [],
+      "sumF": 28618,
+      "sumI": 246256,
+      "sumR": -335688,
+      "cmf": 0.45,
+      "vwapGap": -12.4,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 64900,
+          "foreign": 47413,
+          "inst": -12782,
+          "retail": -34093
+        },
+        {
+          "date": "20260724",
+          "close": 64500,
+          "foreign": 50498,
+          "inst": -108822,
+          "retail": 62033
+        },
+        {
+          "date": "20260723",
+          "close": 73700,
+          "foreign": -8583,
+          "inst": 27621,
+          "retail": -19431
+        },
+        {
+          "date": "20260722",
+          "close": 70400,
+          "foreign": -43604,
+          "inst": -46190,
+          "retail": 85872
+        },
+        {
+          "date": "20260721",
+          "close": 77600,
+          "foreign": -113888,
+          "inst": 77727,
+          "retail": 32296
+        },
+        {
+          "date": "20260720",
+          "close": 71600,
+          "foreign": -83411,
+          "inst": 96802,
+          "retail": -13685
+        },
+        {
+          "date": "20260716",
+          "close": 70400,
+          "foreign": -13333,
+          "inst": -64191,
+          "retail": 76197
+        }
+      ]
+    },
+    "222800": {
+      "code": "222800",
+      "name": "심텍",
+      "price": 76600,
+      "chg": -17.01,
+      "vol": 275455,
+      "foreignRatio": 10.83,
+      "themes": [],
+      "sumF": -801372,
+      "sumI": 770929,
+      "sumR": 14105,
+      "cmf": -0.68,
+      "vwapGap": -19.0,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 92300,
+          "foreign": 36204,
+          "inst": -831,
+          "retail": -37617
+        },
+        {
+          "date": "20260724",
+          "close": 88500,
+          "foreign": 121332,
+          "inst": -185960,
+          "retail": 64067
+        },
+        {
+          "date": "20260723",
+          "close": 98300,
+          "foreign": 20112,
+          "inst": -40656,
+          "retail": 22931
+        },
+        {
+          "date": "20260722",
+          "close": 97600,
+          "foreign": -33391,
+          "inst": -13235,
+          "retail": 46092
+        },
+        {
+          "date": "20260721",
+          "close": 100900,
+          "foreign": -83402,
+          "inst": 72836,
+          "retail": 11135
+        },
+        {
+          "date": "20260720",
+          "close": 99500,
+          "foreign": 128487,
+          "inst": -133714,
+          "retail": 4257
+        },
+        {
+          "date": "20260716",
+          "close": 107400,
+          "foreign": -90472,
+          "inst": -55374,
+          "retail": 145444
+        }
+      ]
+    },
+    "214150": {
+      "code": "214150",
+      "name": "KSQ150",
+      "price": 42650,
+      "chg": -6.06,
+      "vol": 56700,
+      "foreignRatio": 70.89,
+      "themes": [],
+      "sumF": 169611,
+      "sumI": 72462,
+      "sumR": -264874,
+      "cmf": 0.48,
+      "vwapGap": -1.9,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 45400,
+          "foreign": -5136,
+          "inst": 45346,
+          "retail": -39926
+        },
+        {
+          "date": "20260724",
+          "close": 44450,
+          "foreign": 50930,
+          "inst": -21830,
+          "retail": -29006
+        },
+        {
+          "date": "20260723",
+          "close": 44250,
+          "foreign": -27981,
+          "inst": 25198,
+          "retail": 2961
+        },
+        {
+          "date": "20260722",
+          "close": 43400,
+          "foreign": 50608,
+          "inst": -46809,
+          "retail": -3334
+        },
+        {
+          "date": "20260721",
+          "close": 43750,
+          "foreign": -6691,
+          "inst": 7532,
+          "retail": -510
+        },
+        {
+          "date": "20260720",
+          "close": 43800,
+          "foreign": 46009,
+          "inst": -28742,
+          "retail": -17275
+        },
+        {
+          "date": "20260716",
+          "close": 44100,
+          "foreign": 112257,
+          "inst": -106202,
+          "retail": -6069
+        }
+      ]
+    },
+    "087010": {
+      "code": "087010",
+      "name": "펩트론",
+      "price": 117400,
+      "chg": -8.92,
+      "vol": 83875,
+      "foreignRatio": 5.17,
+      "themes": [],
+      "sumF": 24268,
+      "sumI": -355292,
+      "sumR": 341012,
+      "cmf": -0.49,
+      "vwapGap": -9.9,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 128900,
+          "foreign": -64545,
+          "inst": 30741,
+          "retail": 32209
+        },
+        {
+          "date": "20260724",
+          "close": 113300,
+          "foreign": -4345,
+          "inst": -21870,
+          "retail": 26172
+        },
+        {
+          "date": "20260723",
+          "close": 108800,
+          "foreign": 5393,
+          "inst": 11582,
+          "retail": -17891
+        },
+        {
+          "date": "20260722",
+          "close": 103600,
+          "foreign": 20293,
+          "inst": -30873,
+          "retail": 10747
+        },
+        {
+          "date": "20260721",
+          "close": 106300,
+          "foreign": 22222,
+          "inst": -8130,
+          "retail": -14106
+        },
+        {
+          "date": "20260720",
+          "close": 108500,
+          "foreign": 16468,
+          "inst": -8484,
+          "retail": -8035
+        },
+        {
+          "date": "20260716",
+          "close": 119200,
+          "foreign": -24621,
+          "inst": -26389,
+          "retail": 50924
+        }
+      ]
+    },
+    "403870": {
+      "code": "403870",
+      "name": "HPSP",
+      "price": 33150,
+      "chg": -11.6,
+      "vol": 1020296,
+      "foreignRatio": 31.89,
+      "themes": [],
+      "sumF": 1818952,
+      "sumI": -7915505,
+      "sumR": 6005028,
+      "cmf": -0.5,
+      "vwapGap": -12.9,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 37500,
+          "foreign": 217867,
+          "inst": 97803,
+          "retail": -307354
+        },
+        {
+          "date": "20260724",
+          "close": 35650,
+          "foreign": -436847,
+          "inst": -162991,
+          "retail": 564910
+        },
+        {
+          "date": "20260723",
+          "close": 39650,
+          "foreign": -276514,
+          "inst": 39744,
+          "retail": 226931
+        },
+        {
+          "date": "20260722",
+          "close": 38800,
+          "foreign": 19071,
+          "inst": -27314,
+          "retail": 38640
+        },
+        {
+          "date": "20260721",
+          "close": 39100,
+          "foreign": -348908,
+          "inst": 89466,
+          "retail": 242346
+        },
+        {
+          "date": "20260720",
+          "close": 39500,
+          "foreign": -157587,
+          "inst": -58994,
+          "retail": 190173
+        },
+        {
+          "date": "20260716",
+          "close": 42500,
+          "foreign": -305997,
+          "inst": -70629,
+          "retail": 380080
+        }
+      ]
+    },
+    "108490": {
+      "code": "108490",
+      "name": "로보티즈",
+      "price": 181100,
+      "chg": -9.9,
+      "vol": 67407,
+      "foreignRatio": 6.21,
+      "themes": [
+        "로봇"
+      ],
+      "sumF": -182479,
+      "sumI": -20057,
+      "sumR": 192845,
+      "cmf": -0.51,
+      "vwapGap": -6.7,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 201000,
+          "foreign": -10506,
+          "inst": 17341,
+          "retail": -6615
+        },
+        {
+          "date": "20260724",
+          "close": 191400,
+          "foreign": -46240,
+          "inst": -38449,
+          "retail": 83127
+        },
+        {
+          "date": "20260723",
+          "close": 216500,
+          "foreign": -74033,
+          "inst": 8713,
+          "retail": 64680
+        },
+        {
+          "date": "20260722",
+          "close": 219500,
+          "foreign": -46964,
+          "inst": 61005,
+          "retail": -19160
+        },
+        {
+          "date": "20260721",
+          "close": 197000,
+          "foreign": -20709,
+          "inst": 16277,
+          "retail": -1299
+        },
+        {
+          "date": "20260720",
+          "close": 184200,
+          "foreign": 15148,
+          "inst": -20277,
+          "retail": 6294
+        },
+        {
+          "date": "20260716",
+          "close": 199900,
+          "foreign": -20629,
+          "inst": -35629,
+          "retail": 56158
+        }
+      ]
+    },
+    "095340": {
+      "code": "095340",
+      "name": "ISC",
+      "price": 120700,
+      "chg": -11.9,
+      "vol": 54613,
+      "foreignRatio": 31.31,
+      "themes": [],
+      "sumF": 1814958,
+      "sumI": -1718592,
+      "sumR": -101035,
+      "cmf": 0.49,
+      "vwapGap": -9.7,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 137000,
+          "foreign": -39453,
+          "inst": 34269,
+          "retail": 4692
+        },
+        {
+          "date": "20260724",
+          "close": 134600,
+          "foreign": 17719,
+          "inst": -35073,
+          "retail": 17338
+        },
+        {
+          "date": "20260723",
+          "close": 147200,
+          "foreign": -13018,
+          "inst": 15441,
+          "retail": -2302
+        },
+        {
+          "date": "20260722",
+          "close": 140500,
+          "foreign": 3213,
+          "inst": 5403,
+          "retail": -8467
+        },
+        {
+          "date": "20260721",
+          "close": 139200,
+          "foreign": 20405,
+          "inst": -14013,
+          "retail": -4505
+        },
+        {
+          "date": "20260720",
+          "close": 135600,
+          "foreign": 112966,
+          "inst": -87347,
+          "retail": -22889
+        },
+        {
+          "date": "20260716",
+          "close": 145000,
+          "foreign": 25247,
+          "inst": -35230,
+          "retail": 9560
+        }
+      ]
+    },
+    "347850": {
+      "code": "347850",
+      "name": "디앤디파마텍",
+      "price": 52800,
+      "chg": -10.51,
+      "vol": 456915,
+      "foreignRatio": 5.3,
+      "themes": [],
+      "sumF": -831050,
+      "sumI": 166147,
+      "sumR": 747363,
+      "cmf": -0.47,
+      "vwapGap": -22.1,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 59000,
+          "foreign": -135215,
+          "inst": 5398,
+          "retail": 130981
+        },
+        {
+          "date": "20260724",
+          "close": 59600,
+          "foreign": 12744,
+          "inst": 12068,
+          "retail": -22691
+        },
+        {
+          "date": "20260723",
+          "close": 64000,
+          "foreign": 79908,
+          "inst": -3016,
+          "retail": -79216
+        },
+        {
+          "date": "20260722",
+          "close": 59000,
+          "foreign": -17083,
+          "inst": -142164,
+          "retail": 155314
+        },
+        {
+          "date": "20260721",
+          "close": 61000,
+          "foreign": 88884,
+          "inst": -203594,
+          "retail": 108791
+        },
+        {
+          "date": "20260720",
+          "close": 64300,
+          "foreign": 92404,
+          "inst": -89657,
+          "retail": 4872
+        },
+        {
+          "date": "20260716",
+          "close": 68700,
+          "foreign": -276966,
+          "inst": -122941,
+          "retail": 404660
+        }
+      ]
+    },
+    "257720": {
+      "code": "257720",
+      "name": "KSQ150",
+      "price": 36300,
+      "chg": -5.47,
+      "vol": 274689,
+      "foreignRatio": 7.31,
+      "themes": [],
+      "sumF": -389516,
+      "sumI": 1421931,
+      "sumR": -1065465,
+      "cmf": 0.49,
+      "vwapGap": 6.9,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 38400,
+          "foreign": 72955,
+          "inst": 224302,
+          "retail": -286176
+        },
+        {
+          "date": "20260724",
+          "close": 35250,
+          "foreign": 19890,
+          "inst": -29083,
+          "retail": 8923
+        },
+        {
+          "date": "20260723",
+          "close": 36400,
+          "foreign": 107909,
+          "inst": -72493,
+          "retail": -37180
+        },
+        {
+          "date": "20260722",
+          "close": 35000,
+          "foreign": -33677,
+          "inst": -2346,
+          "retail": 35518
+        },
+        {
+          "date": "20260721",
+          "close": 35650,
+          "foreign": 22061,
+          "inst": 85915,
+          "retail": -106769
+        },
+        {
+          "date": "20260720",
+          "close": 34450,
+          "foreign": 17621,
+          "inst": 18973,
+          "retail": -38301
+        },
+        {
+          "date": "20260716",
+          "close": 36050,
+          "foreign": 58963,
+          "inst": -49973,
+          "retail": -7535
+        }
+      ]
+    },
+    "319400": {
+      "code": "319400",
+      "name": "현대오토에버",
+      "price": 20950,
+      "chg": -4.12,
+      "vol": 1347798,
+      "foreignRatio": 1.63,
+      "themes": [],
+      "sumF": -155830,
+      "sumI": 327444,
+      "sumR": -154855,
+      "cmf": 0.53,
+      "vwapGap": -0.6,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 21850,
+          "foreign": 24596,
+          "inst": 61332,
+          "retail": -82977
+        },
+        {
+          "date": "20260724",
+          "close": 19220,
+          "foreign": -293549,
+          "inst": -70371,
+          "retail": 366699
+        },
+        {
+          "date": "20260723",
+          "close": 21550,
+          "foreign": 166246,
+          "inst": 98617,
+          "retail": -263220
+        },
+        {
+          "date": "20260722",
+          "close": 19730,
+          "foreign": -164925,
+          "inst": -32083,
+          "retail": 191364
+        },
+        {
+          "date": "20260721",
+          "close": 18900,
+          "foreign": -58613,
+          "inst": 19424,
+          "retail": 40042
+        },
+        {
+          "date": "20260720",
+          "close": 18550,
+          "foreign": 134574,
+          "inst": -4909,
+          "retail": -129809
+        },
+        {
+          "date": "20260716",
+          "close": 19220,
+          "foreign": -73526,
+          "inst": -56876,
+          "retail": 156060
+        }
+      ]
+    },
+    "095610": {
+      "code": "095610",
+      "name": "KSQ150",
+      "price": 120500,
+      "chg": -15.2,
+      "vol": 246587,
+      "foreignRatio": 9.0,
+      "themes": [],
+      "sumF": -269635,
+      "sumI": -64548,
+      "sumR": 332086,
+      "cmf": -0.5,
+      "vwapGap": -17.8,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 142100,
+          "foreign": 40471,
+          "inst": -16063,
+          "retail": -23896
+        },
+        {
+          "date": "20260724",
+          "close": 136100,
+          "foreign": 58196,
+          "inst": -172353,
+          "retail": 122783
+        },
+        {
+          "date": "20260723",
+          "close": 154100,
+          "foreign": 209763,
+          "inst": -352650,
+          "retail": 141205
+        },
+        {
+          "date": "20260722",
+          "close": 156500,
+          "foreign": -39512,
+          "inst": -13409,
+          "retail": 54800
+        },
+        {
+          "date": "20260721",
+          "close": 165700,
+          "foreign": 10538,
+          "inst": -30156,
+          "retail": 14623
+        },
+        {
+          "date": "20260720",
+          "close": 170800,
+          "foreign": 20813,
+          "inst": -58108,
+          "retail": 35930
+        },
+        {
+          "date": "20260716",
+          "close": 194300,
+          "foreign": -90449,
+          "inst": -2245,
+          "retail": 93915
+        }
+      ]
+    },
+    "084370": {
+      "code": "084370",
+      "name": "KSQ150",
+      "price": 100300,
+      "chg": -10.69,
+      "vol": 68054,
+      "foreignRatio": 36.43,
+      "themes": [],
+      "sumF": -156403,
+      "sumI": 48703,
+      "sumR": 100871,
+      "cmf": -0.52,
+      "vwapGap": -24.7,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 112300,
+          "foreign": -50795,
+          "inst": 46595,
+          "retail": 3927
+        },
+        {
+          "date": "20260724",
+          "close": 109200,
+          "foreign": 511,
+          "inst": -24681,
+          "retail": 24069
+        },
+        {
+          "date": "20260723",
+          "close": 122400,
+          "foreign": 6095,
+          "inst": 10824,
+          "retail": -17399
+        },
+        {
+          "date": "20260722",
+          "close": 118300,
+          "foreign": -5714,
+          "inst": -31263,
+          "retail": 37206
+        },
+        {
+          "date": "20260721",
+          "close": 125800,
+          "foreign": -6792,
+          "inst": -13882,
+          "retail": 20199
+        },
+        {
+          "date": "20260720",
+          "close": 127900,
+          "foreign": 36892,
+          "inst": -44488,
+          "retail": 7568
+        },
+        {
+          "date": "20260716",
+          "close": 146800,
+          "foreign": -15078,
+          "inst": -3646,
+          "retail": 19067
+        }
+      ]
+    },
+    "226950": {
+      "code": "226950",
+      "name": "올릭스",
+      "price": 105500,
+      "chg": -7.21,
+      "vol": 114163,
+      "foreignRatio": 7.81,
+      "themes": [],
+      "sumF": -144928,
+      "sumI": 272358,
+      "sumR": -157278,
+      "cmf": 0.45,
+      "vwapGap": -13.0,
+      "adTrend": "flat",
+      "volDiverge": true,
+      "scenario": "stealth",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 113700,
+          "foreign": -51740,
+          "inst": 64776,
+          "retail": -12975
+        },
+        {
+          "date": "20260724",
+          "close": 109500,
+          "foreign": -26643,
+          "inst": 48560,
+          "retail": -22527
+        },
+        {
+          "date": "20260723",
+          "close": 113800,
+          "foreign": 57288,
+          "inst": -6019,
+          "retail": -52645
+        },
+        {
+          "date": "20260722",
+          "close": 103000,
+          "foreign": 107110,
+          "inst": -94131,
+          "retail": -11649
+        },
+        {
+          "date": "20260721",
+          "close": 109200,
+          "foreign": 92461,
+          "inst": -88787,
+          "retail": -4899
+        },
+        {
+          "date": "20260720",
+          "close": 114800,
+          "foreign": -7840,
+          "inst": -79874,
+          "retail": 90421
+        },
+        {
+          "date": "20260716",
+          "close": 136600,
+          "foreign": -23330,
+          "inst": -40955,
+          "retail": 56881
+        }
+      ]
+    },
+    "080220": {
+      "code": "080220",
+      "name": "제주반도체",
+      "price": 63900,
+      "chg": -13.65,
+      "vol": 941015,
+      "foreignRatio": 0.0,
+      "themes": [],
+      "sumF": -654526,
+      "sumI": 112272,
+      "sumR": 449786,
+      "cmf": -0.55,
+      "vwapGap": -11.8,
+      "adTrend": "down",
+      "volDiverge": false,
+      "scenario": "exit",
+      "days": [
+        {
+          "date": "20260727",
+          "close": 74000,
+          "foreign": 59196,
+          "inst": 3236,
+          "retail": -66981
+        },
+        {
+          "date": "20260724",
+          "close": 70300,
+          "foreign": -315888,
+          "inst": -82192,
+          "retail": 394021
+        },
+        {
+          "date": "20260723",
+          "close": 80900,
+          "foreign": 113497,
+          "inst": 50351,
+          "retail": -171696
+        },
+        {
+          "date": "20260722",
+          "close": 75000,
+          "foreign": -105231,
+          "inst": -51271,
+          "retail": 156337
+        },
+        {
+          "date": "20260721",
+          "close": 78300,
+          "foreign": -202650,
+          "inst": 17605,
+          "retail": 181697
+        },
+        {
+          "date": "20260720",
+          "close": 78000,
+          "foreign": -51281,
+          "inst": -12026,
+          "retail": 47591
+        },
+        {
+          "date": "20260716",
+          "close": 81900,
+          "foreign": -124249,
+          "inst": -42076,
+          "retail": 157260
+        }
+      ]
+    },
     "298040": {
       "code": "298040",
       "name": "효성중공업",
-      "price": 2625000,
-      "chg": -2.09,
-      "vol": 31533,
+      "price": 2344000,
+      "chg": -10.7,
+      "vol": 19291,
       "foreignRatio": 26.54,
       "themes": [
         "전력설비"
@@ -2063,2060 +4179,12 @@
         }
       ]
     },
-    "196170": {
-      "code": "196170",
-      "name": "알테오젠",
-      "price": 312000,
-      "chg": 3.83,
-      "vol": 330539,
-      "foreignRatio": 14.81,
-      "themes": [],
-      "sumF": -26436,
-      "sumI": 45769,
-      "sumR": 20181,
-      "cmf": 0.49,
-      "vwapGap": -0.7,
-      "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 312000,
-          "foreign": -59068,
-          "inst": 106802,
-          "retail": -47151
-        },
-        {
-          "date": "20260724",
-          "close": 300500,
-          "foreign": 31856,
-          "inst": -10709,
-          "retail": -20888
-        },
-        {
-          "date": "20260723",
-          "close": 306500,
-          "foreign": 136160,
-          "inst": 70910,
-          "retail": -209550
-        },
-        {
-          "date": "20260722",
-          "close": 268000,
-          "foreign": 37362,
-          "inst": -67462,
-          "retail": 29624
-        },
-        {
-          "date": "20260721",
-          "close": 273000,
-          "foreign": 43191,
-          "inst": 33978,
-          "retail": -76045
-        },
-        {
-          "date": "20260720",
-          "close": 269500,
-          "foreign": -8196,
-          "inst": -28794,
-          "retail": 46134
-        },
-        {
-          "date": "20260716",
-          "close": 276500,
-          "foreign": 14677,
-          "inst": -51697,
-          "retail": 37489
-        }
-      ]
-    },
-    "086520": {
-      "code": "086520",
-      "name": "에코프로",
-      "price": 80600,
-      "chg": 3.2,
-      "vol": 619255,
-      "foreignRatio": 19.23,
-      "themes": [],
-      "sumF": -1696153,
-      "sumI": 784327,
-      "sumR": 899987,
-      "cmf": -0.5,
-      "vwapGap": -5.3,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 80600,
-          "foreign": -172181,
-          "inst": 126408,
-          "retail": 44875
-        },
-        {
-          "date": "20260724",
-          "close": 78100,
-          "foreign": -73367,
-          "inst": -133188,
-          "retail": 206800
-        },
-        {
-          "date": "20260723",
-          "close": 84300,
-          "foreign": 1776,
-          "inst": 239505,
-          "retail": -238587
-        },
-        {
-          "date": "20260722",
-          "close": 77100,
-          "foreign": 136450,
-          "inst": -32838,
-          "retail": -103129
-        },
-        {
-          "date": "20260721",
-          "close": 75200,
-          "foreign": 47374,
-          "inst": 35317,
-          "retail": -81112
-        },
-        {
-          "date": "20260720",
-          "close": 73500,
-          "foreign": -41412,
-          "inst": -94916,
-          "retail": 137587
-        },
-        {
-          "date": "20260716",
-          "close": 80000,
-          "foreign": -149136,
-          "inst": -148373,
-          "retail": 299001
-        }
-      ]
-    },
-    "247540": {
-      "code": "247540",
-      "name": "에코프로비엠",
-      "price": 110500,
-      "chg": 2.03,
-      "vol": 280334,
-      "foreignRatio": 14.86,
-      "themes": [
-        "2차전지"
-      ],
-      "sumF": 58278,
-      "sumI": 503110,
-      "sumR": -556631,
-      "cmf": 0.5,
-      "vwapGap": -7.4,
-      "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 110500,
-          "foreign": -93785,
-          "inst": 81075,
-          "retail": 12362
-        },
-        {
-          "date": "20260724",
-          "close": 108300,
-          "foreign": -17809,
-          "inst": -72901,
-          "retail": 90426
-        },
-        {
-          "date": "20260723",
-          "close": 118200,
-          "foreign": -37207,
-          "inst": 108851,
-          "retail": -72231
-        },
-        {
-          "date": "20260722",
-          "close": 107500,
-          "foreign": 74096,
-          "inst": -49840,
-          "retail": -23920
-        },
-        {
-          "date": "20260721",
-          "close": 105900,
-          "foreign": -3728,
-          "inst": 53402,
-          "retail": -49571
-        },
-        {
-          "date": "20260720",
-          "close": 104100,
-          "foreign": 6018,
-          "inst": -22188,
-          "retail": 17510
-        },
-        {
-          "date": "20260716",
-          "close": 112400,
-          "foreign": 17632,
-          "inst": -71597,
-          "retail": 53807
-        }
-      ]
-    },
-    "277810": {
-      "code": "277810",
-      "name": "레인보우로보틱스",
-      "price": 446000,
-      "chg": 6.57,
-      "vol": 142759,
-      "foreignRatio": 5.31,
-      "themes": [
-        "로봇"
-      ],
-      "sumF": -291045,
-      "sumI": 65203,
-      "sumR": 227071,
-      "cmf": -0.5,
-      "vwapGap": -1.6,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 446000,
-          "foreign": -44,
-          "inst": 21293,
-          "retail": -20177
-        },
-        {
-          "date": "20260724",
-          "close": 418500,
-          "foreign": -114540,
-          "inst": -45046,
-          "retail": 159187
-        },
-        {
-          "date": "20260723",
-          "close": 508000,
-          "foreign": -35998,
-          "inst": 10743,
-          "retail": 25964
-        },
-        {
-          "date": "20260722",
-          "close": 478500,
-          "foreign": -94409,
-          "inst": 24162,
-          "retail": 63615
-        },
-        {
-          "date": "20260721",
-          "close": 411500,
-          "foreign": -44384,
-          "inst": 9346,
-          "retail": 33675
-        },
-        {
-          "date": "20260720",
-          "close": 375000,
-          "foreign": 1485,
-          "inst": -1113,
-          "retail": -74
-        },
-        {
-          "date": "20260716",
-          "close": 397000,
-          "foreign": -10658,
-          "inst": -7622,
-          "retail": 18098
-        }
-      ]
-    },
-    "036930": {
-      "code": "036930",
-      "name": "주성엔지니어링",
-      "price": 149900,
-      "chg": 6.31,
-      "vol": 1378492,
-      "foreignRatio": 6.6,
-      "themes": [],
-      "sumF": -1262363,
-      "sumI": 2234595,
-      "sumR": -953623,
-      "cmf": 0.5,
-      "vwapGap": -17.9,
-      "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 149900,
-          "foreign": 30962,
-          "inst": 96328,
-          "retail": -128066
-        },
-        {
-          "date": "20260724",
-          "close": 141000,
-          "foreign": 58894,
-          "inst": -107608,
-          "retail": 51528
-        },
-        {
-          "date": "20260723",
-          "close": 163900,
-          "foreign": -31863,
-          "inst": -66627,
-          "retail": 99764
-        },
-        {
-          "date": "20260722",
-          "close": 162000,
-          "foreign": -115216,
-          "inst": -132250,
-          "retail": 247873
-        },
-        {
-          "date": "20260721",
-          "close": 169200,
-          "foreign": -129138,
-          "inst": 11759,
-          "retail": 120832
-        },
-        {
-          "date": "20260720",
-          "close": 167900,
-          "foreign": -7608,
-          "inst": -115571,
-          "retail": 122939
-        },
-        {
-          "date": "20260716",
-          "close": 187900,
-          "foreign": -225435,
-          "inst": -26352,
-          "retail": 248864
-        }
-      ]
-    },
-    "058470": {
-      "code": "058470",
-      "name": "리노공업",
-      "price": 69800,
-      "chg": 1.75,
-      "vol": 351928,
-      "foreignRatio": 32.37,
-      "themes": [],
-      "sumF": 4330271,
-      "sumI": -4735338,
-      "sumR": 356914,
-      "cmf": -0.53,
-      "vwapGap": -5.9,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 69800,
-          "foreign": -50445,
-          "inst": 62762,
-          "retail": -12005
-        },
-        {
-          "date": "20260724",
-          "close": 68600,
-          "foreign": -11846,
-          "inst": -72678,
-          "retail": 81104
-        },
-        {
-          "date": "20260723",
-          "close": 73900,
-          "foreign": 32508,
-          "inst": 9980,
-          "retail": -41871
-        },
-        {
-          "date": "20260722",
-          "close": 71800,
-          "foreign": 196001,
-          "inst": -93779,
-          "retail": -97921
-        },
-        {
-          "date": "20260721",
-          "close": 70000,
-          "foreign": -38363,
-          "inst": 41957,
-          "retail": -3131
-        },
-        {
-          "date": "20260720",
-          "close": 69100,
-          "foreign": 111948,
-          "inst": -103522,
-          "retail": -6181
-        },
-        {
-          "date": "20260716",
-          "close": 72300,
-          "foreign": 25616,
-          "inst": -71184,
-          "retail": 43153
-        }
-      ]
-    },
-    "240810": {
-      "code": "240810",
-      "name": "원익IPS",
-      "price": 106000,
-      "chg": 5.47,
-      "vol": 927567,
-      "foreignRatio": 14.14,
-      "themes": [],
-      "sumF": -1153139,
-      "sumI": -473721,
-      "sumR": 1542968,
-      "cmf": -0.51,
-      "vwapGap": -16.0,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 106000,
-          "foreign": 8778,
-          "inst": 85258,
-          "retail": -93861
-        },
-        {
-          "date": "20260724",
-          "close": 100500,
-          "foreign": 33859,
-          "inst": -195598,
-          "retail": 168062
-        },
-        {
-          "date": "20260723",
-          "close": 113300,
-          "foreign": 94039,
-          "inst": -80340,
-          "retail": -2249
-        },
-        {
-          "date": "20260722",
-          "close": 111700,
-          "foreign": -204013,
-          "inst": -60245,
-          "retail": 240207
-        },
-        {
-          "date": "20260721",
-          "close": 116100,
-          "foreign": 30033,
-          "inst": -28492,
-          "retail": -7324
-        },
-        {
-          "date": "20260720",
-          "close": 115100,
-          "foreign": -397795,
-          "inst": -37502,
-          "retail": 434210
-        },
-        {
-          "date": "20260716",
-          "close": 140700,
-          "foreign": -251779,
-          "inst": 208664,
-          "retail": 37569
-        }
-      ]
-    },
-    "319660": {
-      "code": "319660",
-      "name": "KSQ150",
-      "price": 146000,
-      "chg": 1.46,
-      "vol": 407581,
-      "foreignRatio": 21.03,
-      "themes": [],
-      "sumF": -948485,
-      "sumI": 814249,
-      "sumR": 157171,
-      "cmf": -0.46,
-      "vwapGap": -16.8,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 146000,
-          "foreign": 3479,
-          "inst": 782,
-          "retail": -2688
-        },
-        {
-          "date": "20260724",
-          "close": 143900,
-          "foreign": 161887,
-          "inst": -160396,
-          "retail": 4649
-        },
-        {
-          "date": "20260723",
-          "close": 157000,
-          "foreign": 109489,
-          "inst": -82475,
-          "retail": -26983
-        },
-        {
-          "date": "20260722",
-          "close": 156700,
-          "foreign": -20336,
-          "inst": -42087,
-          "retail": 63149
-        },
-        {
-          "date": "20260721",
-          "close": 170000,
-          "foreign": 24234,
-          "inst": -30645,
-          "retail": 6665
-        },
-        {
-          "date": "20260720",
-          "close": 170800,
-          "foreign": -120519,
-          "inst": 96447,
-          "retail": 23833
-        },
-        {
-          "date": "20260716",
-          "close": 195400,
-          "foreign": -44391,
-          "inst": 14039,
-          "retail": 31745
-        }
-      ]
-    },
-    "028300": {
-      "code": "028300",
-      "name": "HLB",
-      "price": 31450,
-      "chg": 0.48,
-      "vol": 618882,
-      "foreignRatio": 18.2,
-      "themes": [],
-      "sumF": -2001315,
-      "sumI": -20110,
-      "sumR": 2001459,
-      "cmf": -0.5,
-      "vwapGap": -20.6,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 31450,
-          "foreign": -25779,
-          "inst": 231258,
-          "retail": -205362
-        },
-        {
-          "date": "20260724",
-          "close": 31300,
-          "foreign": -261394,
-          "inst": -121397,
-          "retail": 383594
-        },
-        {
-          "date": "20260723",
-          "close": 30000,
-          "foreign": 130777,
-          "inst": 108426,
-          "retail": -228283
-        },
-        {
-          "date": "20260722",
-          "close": 28300,
-          "foreign": -227506,
-          "inst": -238583,
-          "retail": 442188
-        },
-        {
-          "date": "20260721",
-          "close": 30400,
-          "foreign": -208708,
-          "inst": 15744,
-          "retail": 195604
-        },
-        {
-          "date": "20260720",
-          "close": 30550,
-          "foreign": -114714,
-          "inst": -68449,
-          "retail": 178709
-        },
-        {
-          "date": "20260716",
-          "close": 35300,
-          "foreign": -290820,
-          "inst": -182360,
-          "retail": 473067
-        }
-      ]
-    },
-    "298380": {
-      "code": "298380",
-      "name": "에이비엘바이오",
-      "price": 72600,
-      "chg": 0.28,
-      "vol": 187172,
-      "foreignRatio": 13.69,
-      "themes": [],
-      "sumF": 360470,
-      "sumI": 224080,
-      "sumR": -553662,
-      "cmf": 0.51,
-      "vwapGap": -12.8,
-      "adTrend": "up",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 72600,
-          "foreign": -43774,
-          "inst": 51351,
-          "retail": -7641
-        },
-        {
-          "date": "20260724",
-          "close": 72400,
-          "foreign": -3929,
-          "inst": 1857,
-          "retail": 2528
-        },
-        {
-          "date": "20260723",
-          "close": 74300,
-          "foreign": 30185,
-          "inst": 50978,
-          "retail": -80622
-        },
-        {
-          "date": "20260722",
-          "close": 69400,
-          "foreign": 132514,
-          "inst": -117951,
-          "retail": -13675
-        },
-        {
-          "date": "20260721",
-          "close": 69300,
-          "foreign": 106435,
-          "inst": -105019,
-          "retail": 773
-        },
-        {
-          "date": "20260720",
-          "close": 70200,
-          "foreign": 56443,
-          "inst": -45393,
-          "retail": -11181
-        },
-        {
-          "date": "20260716",
-          "close": 75600,
-          "foreign": 53672,
-          "inst": -45971,
-          "retail": -1649
-        }
-      ]
-    },
-    "214450": {
-      "code": "214450",
-      "name": "파마리서치",
-      "price": 370000,
-      "chg": 3.64,
-      "vol": 172776,
-      "foreignRatio": 6.64,
-      "themes": [],
-      "sumF": -205292,
-      "sumI": 573533,
-      "sumR": -371257,
-      "cmf": 0.5,
-      "vwapGap": 9.1,
-      "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 370000,
-          "foreign": -27515,
-          "inst": 61336,
-          "retail": -32864
-        },
-        {
-          "date": "20260724",
-          "close": 357000,
-          "foreign": -6589,
-          "inst": 22512,
-          "retail": -17129
-        },
-        {
-          "date": "20260723",
-          "close": 360000,
-          "foreign": 29019,
-          "inst": 46997,
-          "retail": -75649
-        },
-        {
-          "date": "20260722",
-          "close": 322500,
-          "foreign": -3492,
-          "inst": -23288,
-          "retail": 27168
-        },
-        {
-          "date": "20260721",
-          "close": 341500,
-          "foreign": -7193,
-          "inst": 26210,
-          "retail": -19029
-        },
-        {
-          "date": "20260720",
-          "close": 327000,
-          "foreign": 15013,
-          "inst": 2140,
-          "retail": -15177
-        },
-        {
-          "date": "20260716",
-          "close": 336500,
-          "foreign": -6359,
-          "inst": 21145,
-          "retail": -17172
-        }
-      ]
-    },
-    "039030": {
-      "code": "039030",
-      "name": "이오테크닉스",
-      "price": 309000,
-      "chg": 3.52,
-      "vol": 70042,
-      "foreignRatio": 30.29,
-      "themes": [
-        "HBM반도체"
-      ],
-      "sumF": 599069,
-      "sumI": -755970,
-      "sumR": 148489,
-      "cmf": -0.51,
-      "vwapGap": -15.4,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 309000,
-          "foreign": 2152,
-          "inst": 4412,
-          "retail": -6676
-        },
-        {
-          "date": "20260724",
-          "close": 298500,
-          "foreign": 9516,
-          "inst": -17366,
-          "retail": 7378
-        },
-        {
-          "date": "20260723",
-          "close": 328500,
-          "foreign": -6963,
-          "inst": 16653,
-          "retail": -9306
-        },
-        {
-          "date": "20260722",
-          "close": 308500,
-          "foreign": 13145,
-          "inst": -4338,
-          "retail": -8389
-        },
-        {
-          "date": "20260721",
-          "close": 317500,
-          "foreign": 10274,
-          "inst": -15116,
-          "retail": 4627
-        },
-        {
-          "date": "20260720",
-          "close": 317000,
-          "foreign": 46987,
-          "inst": -41745,
-          "retail": -5876
-        },
-        {
-          "date": "20260716",
-          "close": 344000,
-          "foreign": 10623,
-          "inst": -20999,
-          "retail": 10440
-        }
-      ]
-    },
-    "141080": {
-      "code": "141080",
-      "name": "리가켐바이오",
-      "price": 97600,
-      "chg": 1.56,
-      "vol": 184773,
-      "foreignRatio": 11.47,
-      "themes": [],
-      "sumF": 537901,
-      "sumI": -475010,
-      "sumR": -8173,
-      "cmf": 0.88,
-      "vwapGap": -17.8,
-      "adTrend": "up",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 97600,
-          "foreign": -34374,
-          "inst": 39454,
-          "retail": -1497
-        },
-        {
-          "date": "20260724",
-          "close": 96100,
-          "foreign": 33206,
-          "inst": -29924,
-          "retail": 5657
-        },
-        {
-          "date": "20260723",
-          "close": 101700,
-          "foreign": -7138,
-          "inst": 29450,
-          "retail": -21463
-        },
-        {
-          "date": "20260722",
-          "close": 93900,
-          "foreign": 79202,
-          "inst": -55753,
-          "retail": -18348
-        },
-        {
-          "date": "20260721",
-          "close": 93600,
-          "foreign": 271679,
-          "inst": -257897,
-          "retail": 14800
-        },
-        {
-          "date": "20260720",
-          "close": 97100,
-          "foreign": 58884,
-          "inst": -54203,
-          "retail": -5048
-        },
-        {
-          "date": "20260716",
-          "close": 103700,
-          "foreign": 100058,
-          "inst": -71068,
-          "retail": -25251
-        }
-      ]
-    },
-    "000250": {
-      "code": "000250",
-      "name": "삼천당제약",
-      "price": 149400,
-      "chg": 0.4,
-      "vol": 215711,
-      "foreignRatio": 4.85,
-      "themes": [],
-      "sumF": -507829,
-      "sumI": -83872,
-      "sumR": 571903,
-      "cmf": -0.51,
-      "vwapGap": -22.5,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 149400,
-          "foreign": 4506,
-          "inst": 38475,
-          "retail": -43154
-        },
-        {
-          "date": "20260724",
-          "close": 148800,
-          "foreign": -49804,
-          "inst": -8240,
-          "retail": 56373
-        },
-        {
-          "date": "20260723",
-          "close": 166100,
-          "foreign": 2836,
-          "inst": 10998,
-          "retail": -14416
-        },
-        {
-          "date": "20260722",
-          "close": 152800,
-          "foreign": -55199,
-          "inst": -29191,
-          "retail": 76837
-        },
-        {
-          "date": "20260721",
-          "close": 167800,
-          "foreign": -438987,
-          "inst": -94854,
-          "retail": 525525
-        },
-        {
-          "date": "20260720",
-          "close": 239000,
-          "foreign": -9282,
-          "inst": -11117,
-          "retail": 19868
-        },
-        {
-          "date": "20260716",
-          "close": 184100,
-          "foreign": 11965,
-          "inst": -12652,
-          "retail": 610
-        }
-      ]
-    },
-    "222800": {
-      "code": "222800",
-      "name": "심텍",
-      "price": 92300,
-      "chg": 4.29,
-      "vol": 361120,
-      "foreignRatio": 10.83,
-      "themes": [],
-      "sumF": -801372,
-      "sumI": 770929,
-      "sumR": 14105,
-      "cmf": -0.68,
-      "vwapGap": -19.0,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 92300,
-          "foreign": 36204,
-          "inst": -831,
-          "retail": -37617
-        },
-        {
-          "date": "20260724",
-          "close": 88500,
-          "foreign": 121332,
-          "inst": -185960,
-          "retail": 64067
-        },
-        {
-          "date": "20260723",
-          "close": 98300,
-          "foreign": 20112,
-          "inst": -40656,
-          "retail": 22931
-        },
-        {
-          "date": "20260722",
-          "close": 97600,
-          "foreign": -33391,
-          "inst": -13235,
-          "retail": 46092
-        },
-        {
-          "date": "20260721",
-          "close": 100900,
-          "foreign": -83402,
-          "inst": 72836,
-          "retail": 11135
-        },
-        {
-          "date": "20260720",
-          "close": 99500,
-          "foreign": 128487,
-          "inst": -133714,
-          "retail": 4257
-        },
-        {
-          "date": "20260716",
-          "close": 107400,
-          "foreign": -90472,
-          "inst": -55374,
-          "retail": 145444
-        }
-      ]
-    },
-    "440110": {
-      "code": "440110",
-      "name": "파두",
-      "price": 64900,
-      "chg": 0.62,
-      "vol": 338902,
-      "foreignRatio": 27.35,
-      "themes": [],
-      "sumF": 28618,
-      "sumI": 246256,
-      "sumR": -335688,
-      "cmf": 0.45,
-      "vwapGap": -12.4,
-      "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 64900,
-          "foreign": 47413,
-          "inst": -12782,
-          "retail": -34093
-        },
-        {
-          "date": "20260724",
-          "close": 64500,
-          "foreign": 50498,
-          "inst": -108822,
-          "retail": 62033
-        },
-        {
-          "date": "20260723",
-          "close": 73700,
-          "foreign": -8583,
-          "inst": 27621,
-          "retail": -19431
-        },
-        {
-          "date": "20260722",
-          "close": 70400,
-          "foreign": -43604,
-          "inst": -46190,
-          "retail": 85872
-        },
-        {
-          "date": "20260721",
-          "close": 77600,
-          "foreign": -113888,
-          "inst": 77727,
-          "retail": 32296
-        },
-        {
-          "date": "20260720",
-          "close": 71600,
-          "foreign": -83411,
-          "inst": 96802,
-          "retail": -13685
-        },
-        {
-          "date": "20260716",
-          "close": 70400,
-          "foreign": -13333,
-          "inst": -64191,
-          "retail": 76197
-        }
-      ]
-    },
-    "214370": {
-      "code": "214370",
-      "name": "케어젠",
-      "price": 59700,
-      "chg": 5.29,
-      "vol": 51646,
-      "foreignRatio": 4.38,
-      "themes": [],
-      "sumF": 100461,
-      "sumI": 43649,
-      "sumR": -146512,
-      "cmf": 0.5,
-      "vwapGap": -5.9,
-      "adTrend": "up",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 59700,
-          "foreign": -7268,
-          "inst": 17857,
-          "retail": -10589
-        },
-        {
-          "date": "20260724",
-          "close": 56700,
-          "foreign": 20284,
-          "inst": -12016,
-          "retail": -8069
-        },
-        {
-          "date": "20260723",
-          "close": 57600,
-          "foreign": 1364,
-          "inst": 7946,
-          "retail": -9310
-        },
-        {
-          "date": "20260722",
-          "close": 55100,
-          "foreign": 24363,
-          "inst": -18728,
-          "retail": -5134
-        },
-        {
-          "date": "20260721",
-          "close": 56500,
-          "foreign": 25698,
-          "inst": 2443,
-          "retail": -30013
-        },
-        {
-          "date": "20260720",
-          "close": 60000,
-          "foreign": 11923,
-          "inst": -2736,
-          "retail": -9187
-        },
-        {
-          "date": "20260716",
-          "close": 61700,
-          "foreign": 45288,
-          "inst": -45234,
-          "retail": -189
-        }
-      ]
-    },
-    "403870": {
-      "code": "403870",
-      "name": "HPSP",
-      "price": 37500,
-      "chg": 5.19,
-      "vol": 1991076,
-      "foreignRatio": 31.89,
-      "themes": [],
-      "sumF": 1818952,
-      "sumI": -7915505,
-      "sumR": 6005028,
-      "cmf": -0.5,
-      "vwapGap": -12.9,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 37500,
-          "foreign": 217867,
-          "inst": 97803,
-          "retail": -307354
-        },
-        {
-          "date": "20260724",
-          "close": 35650,
-          "foreign": -436847,
-          "inst": -162991,
-          "retail": 564910
-        },
-        {
-          "date": "20260723",
-          "close": 39650,
-          "foreign": -276514,
-          "inst": 39744,
-          "retail": 226931
-        },
-        {
-          "date": "20260722",
-          "close": 38800,
-          "foreign": 19071,
-          "inst": -27314,
-          "retail": 38640
-        },
-        {
-          "date": "20260721",
-          "close": 39100,
-          "foreign": -348908,
-          "inst": 89466,
-          "retail": 242346
-        },
-        {
-          "date": "20260720",
-          "close": 39500,
-          "foreign": -157587,
-          "inst": -58994,
-          "retail": 190173
-        },
-        {
-          "date": "20260716",
-          "close": 42500,
-          "foreign": -305997,
-          "inst": -70629,
-          "retail": 380080
-        }
-      ]
-    },
-    "087010": {
-      "code": "087010",
-      "name": "펩트론",
-      "price": 128900,
-      "chg": 13.77,
-      "vol": 289622,
-      "foreignRatio": 5.17,
-      "themes": [],
-      "sumF": 24268,
-      "sumI": -355292,
-      "sumR": 341012,
-      "cmf": -0.49,
-      "vwapGap": -9.9,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 128900,
-          "foreign": -64545,
-          "inst": 30741,
-          "retail": 32209
-        },
-        {
-          "date": "20260724",
-          "close": 113300,
-          "foreign": -4345,
-          "inst": -21870,
-          "retail": 26172
-        },
-        {
-          "date": "20260723",
-          "close": 108800,
-          "foreign": 5393,
-          "inst": 11582,
-          "retail": -17891
-        },
-        {
-          "date": "20260722",
-          "close": 103600,
-          "foreign": 20293,
-          "inst": -30873,
-          "retail": 10747
-        },
-        {
-          "date": "20260721",
-          "close": 106300,
-          "foreign": 22222,
-          "inst": -8130,
-          "retail": -14106
-        },
-        {
-          "date": "20260720",
-          "close": 108500,
-          "foreign": 16468,
-          "inst": -8484,
-          "retail": -8035
-        },
-        {
-          "date": "20260716",
-          "close": 119200,
-          "foreign": -24621,
-          "inst": -26389,
-          "retail": 50924
-        }
-      ]
-    },
-    "145020": {
-      "code": "145020",
-      "name": "휴젤",
-      "price": 243000,
-      "chg": 3.62,
-      "vol": 44456,
-      "foreignRatio": 57.46,
-      "themes": [],
-      "sumF": -40858,
-      "sumI": 31405,
-      "sumR": 7218,
-      "cmf": -0.57,
-      "vwapGap": -0.6,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 243000,
-          "foreign": -13442,
-          "inst": 18606,
-          "retail": -5165
-        },
-        {
-          "date": "20260724",
-          "close": 234500,
-          "foreign": 5770,
-          "inst": -5942,
-          "retail": 169
-        },
-        {
-          "date": "20260723",
-          "close": 241500,
-          "foreign": 10299,
-          "inst": 14252,
-          "retail": -24214
-        },
-        {
-          "date": "20260722",
-          "close": 221500,
-          "foreign": -11410,
-          "inst": -11766,
-          "retail": 23067
-        },
-        {
-          "date": "20260721",
-          "close": 228500,
-          "foreign": 953,
-          "inst": -3781,
-          "retail": 2856
-        },
-        {
-          "date": "20260720",
-          "close": 230000,
-          "foreign": 1893,
-          "inst": -4235,
-          "retail": 2248
-        },
-        {
-          "date": "20260716",
-          "close": 239500,
-          "foreign": 9295,
-          "inst": -1405,
-          "retail": -7788
-        }
-      ]
-    },
-    "214150": {
-      "code": "214150",
-      "name": "KSQ150",
-      "price": 45400,
-      "chg": 2.14,
-      "vol": 201886,
-      "foreignRatio": 70.89,
-      "themes": [],
-      "sumF": 169611,
-      "sumI": 72462,
-      "sumR": -264874,
-      "cmf": 0.48,
-      "vwapGap": -1.9,
-      "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 45400,
-          "foreign": -5136,
-          "inst": 45346,
-          "retail": -39926
-        },
-        {
-          "date": "20260724",
-          "close": 44450,
-          "foreign": 50930,
-          "inst": -21830,
-          "retail": -29006
-        },
-        {
-          "date": "20260723",
-          "close": 44250,
-          "foreign": -27981,
-          "inst": 25198,
-          "retail": 2961
-        },
-        {
-          "date": "20260722",
-          "close": 43400,
-          "foreign": 50608,
-          "inst": -46809,
-          "retail": -3334
-        },
-        {
-          "date": "20260721",
-          "close": 43750,
-          "foreign": -6691,
-          "inst": 7532,
-          "retail": -510
-        },
-        {
-          "date": "20260720",
-          "close": 43800,
-          "foreign": 46009,
-          "inst": -28742,
-          "retail": -17275
-        },
-        {
-          "date": "20260716",
-          "close": 44100,
-          "foreign": 112257,
-          "inst": -106202,
-          "retail": -6069
-        }
-      ]
-    },
-    "108490": {
-      "code": "108490",
-      "name": "로보티즈",
-      "price": 201000,
-      "chg": 5.02,
-      "vol": 141456,
-      "foreignRatio": 6.21,
-      "themes": [
-        "로봇"
-      ],
-      "sumF": -182479,
-      "sumI": -20057,
-      "sumR": 192845,
-      "cmf": -0.51,
-      "vwapGap": -6.7,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 201000,
-          "foreign": -10506,
-          "inst": 17341,
-          "retail": -6615
-        },
-        {
-          "date": "20260724",
-          "close": 191400,
-          "foreign": -46240,
-          "inst": -38449,
-          "retail": 83127
-        },
-        {
-          "date": "20260723",
-          "close": 216500,
-          "foreign": -74033,
-          "inst": 8713,
-          "retail": 64680
-        },
-        {
-          "date": "20260722",
-          "close": 219500,
-          "foreign": -46964,
-          "inst": 61005,
-          "retail": -19160
-        },
-        {
-          "date": "20260721",
-          "close": 197000,
-          "foreign": -20709,
-          "inst": 16277,
-          "retail": -1299
-        },
-        {
-          "date": "20260720",
-          "close": 184200,
-          "foreign": 15148,
-          "inst": -20277,
-          "retail": 6294
-        },
-        {
-          "date": "20260716",
-          "close": 199900,
-          "foreign": -20629,
-          "inst": -35629,
-          "retail": 56158
-        }
-      ]
-    },
-    "095340": {
-      "code": "095340",
-      "name": "ISC",
-      "price": 137000,
-      "chg": 1.78,
-      "vol": 188027,
-      "foreignRatio": 31.31,
-      "themes": [],
-      "sumF": 1814958,
-      "sumI": -1718592,
-      "sumR": -101035,
-      "cmf": 0.49,
-      "vwapGap": -9.7,
-      "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 137000,
-          "foreign": -39453,
-          "inst": 34269,
-          "retail": 4692
-        },
-        {
-          "date": "20260724",
-          "close": 134600,
-          "foreign": 17719,
-          "inst": -35073,
-          "retail": 17338
-        },
-        {
-          "date": "20260723",
-          "close": 147200,
-          "foreign": -13018,
-          "inst": 15441,
-          "retail": -2302
-        },
-        {
-          "date": "20260722",
-          "close": 140500,
-          "foreign": 3213,
-          "inst": 5403,
-          "retail": -8467
-        },
-        {
-          "date": "20260721",
-          "close": 139200,
-          "foreign": 20405,
-          "inst": -14013,
-          "retail": -4505
-        },
-        {
-          "date": "20260720",
-          "close": 135600,
-          "foreign": 112966,
-          "inst": -87347,
-          "retail": -22889
-        },
-        {
-          "date": "20260716",
-          "close": 145000,
-          "foreign": 25247,
-          "inst": -35230,
-          "retail": 9560
-        }
-      ]
-    },
-    "095610": {
-      "code": "095610",
-      "name": "KSQ150",
-      "price": 142100,
-      "chg": 4.41,
-      "vol": 458289,
-      "foreignRatio": 9.0,
-      "themes": [],
-      "sumF": -269635,
-      "sumI": -64548,
-      "sumR": 332086,
-      "cmf": -0.5,
-      "vwapGap": -17.8,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 142100,
-          "foreign": 40471,
-          "inst": -16063,
-          "retail": -23896
-        },
-        {
-          "date": "20260724",
-          "close": 136100,
-          "foreign": 58196,
-          "inst": -172353,
-          "retail": 122783
-        },
-        {
-          "date": "20260723",
-          "close": 154100,
-          "foreign": 209763,
-          "inst": -352650,
-          "retail": 141205
-        },
-        {
-          "date": "20260722",
-          "close": 156500,
-          "foreign": -39512,
-          "inst": -13409,
-          "retail": 54800
-        },
-        {
-          "date": "20260721",
-          "close": 165700,
-          "foreign": 10538,
-          "inst": -30156,
-          "retail": 14623
-        },
-        {
-          "date": "20260720",
-          "close": 170800,
-          "foreign": 20813,
-          "inst": -58108,
-          "retail": 35930
-        },
-        {
-          "date": "20260716",
-          "close": 194300,
-          "foreign": -90449,
-          "inst": -2245,
-          "retail": 93915
-        }
-      ]
-    },
-    "347850": {
-      "code": "347850",
-      "name": "디앤디파마텍",
-      "price": 59000,
-      "chg": -1.01,
-      "vol": 659277,
-      "foreignRatio": 5.3,
-      "themes": [],
-      "sumF": -831050,
-      "sumI": 166147,
-      "sumR": 747363,
-      "cmf": -0.47,
-      "vwapGap": -22.1,
-      "adTrend": "down",
-      "volDiverge": false,
-      "scenario": "exit",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 59000,
-          "foreign": -135215,
-          "inst": 5398,
-          "retail": 130981
-        },
-        {
-          "date": "20260724",
-          "close": 59600,
-          "foreign": 12744,
-          "inst": 12068,
-          "retail": -22691
-        },
-        {
-          "date": "20260723",
-          "close": 64000,
-          "foreign": 79908,
-          "inst": -3016,
-          "retail": -79216
-        },
-        {
-          "date": "20260722",
-          "close": 59000,
-          "foreign": -17083,
-          "inst": -142164,
-          "retail": 155314
-        },
-        {
-          "date": "20260721",
-          "close": 61000,
-          "foreign": 88884,
-          "inst": -203594,
-          "retail": 108791
-        },
-        {
-          "date": "20260720",
-          "close": 64300,
-          "foreign": 92404,
-          "inst": -89657,
-          "retail": 4872
-        },
-        {
-          "date": "20260716",
-          "close": 68700,
-          "foreign": -276966,
-          "inst": -122941,
-          "retail": 404660
-        }
-      ]
-    },
-    "084370": {
-      "code": "084370",
-      "name": "KSQ150",
-      "price": 112300,
-      "chg": 2.84,
-      "vol": 266683,
-      "foreignRatio": 36.43,
-      "themes": [],
-      "sumF": -156403,
-      "sumI": 48703,
-      "sumR": 100871,
-      "cmf": -0.52,
-      "vwapGap": -24.7,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 112300,
-          "foreign": -50795,
-          "inst": 46595,
-          "retail": 3927
-        },
-        {
-          "date": "20260724",
-          "close": 109200,
-          "foreign": 511,
-          "inst": -24681,
-          "retail": 24069
-        },
-        {
-          "date": "20260723",
-          "close": 122400,
-          "foreign": 6095,
-          "inst": 10824,
-          "retail": -17399
-        },
-        {
-          "date": "20260722",
-          "close": 118300,
-          "foreign": -5714,
-          "inst": -31263,
-          "retail": 37206
-        },
-        {
-          "date": "20260721",
-          "close": 125800,
-          "foreign": -6792,
-          "inst": -13882,
-          "retail": 20199
-        },
-        {
-          "date": "20260720",
-          "close": 127900,
-          "foreign": 36892,
-          "inst": -44488,
-          "retail": 7568
-        },
-        {
-          "date": "20260716",
-          "close": 146800,
-          "foreign": -15078,
-          "inst": -3646,
-          "retail": 19067
-        }
-      ]
-    },
-    "080220": {
-      "code": "080220",
-      "name": "제주반도체",
-      "price": 74000,
-      "chg": 5.26,
-      "vol": 1361724,
-      "foreignRatio": 0.0,
-      "themes": [],
-      "sumF": -654526,
-      "sumI": 112272,
-      "sumR": 449786,
-      "cmf": -0.55,
-      "vwapGap": -11.8,
-      "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 74000,
-          "foreign": 59196,
-          "inst": 3236,
-          "retail": -66981
-        },
-        {
-          "date": "20260724",
-          "close": 70300,
-          "foreign": -315888,
-          "inst": -82192,
-          "retail": 394021
-        },
-        {
-          "date": "20260723",
-          "close": 80900,
-          "foreign": 113497,
-          "inst": 50351,
-          "retail": -171696
-        },
-        {
-          "date": "20260722",
-          "close": 75000,
-          "foreign": -105231,
-          "inst": -51271,
-          "retail": 156337
-        },
-        {
-          "date": "20260721",
-          "close": 78300,
-          "foreign": -202650,
-          "inst": 17605,
-          "retail": 181697
-        },
-        {
-          "date": "20260720",
-          "close": 78000,
-          "foreign": -51281,
-          "inst": -12026,
-          "retail": 47591
-        },
-        {
-          "date": "20260716",
-          "close": 81900,
-          "foreign": -124249,
-          "inst": -42076,
-          "retail": 157260
-        }
-      ]
-    },
-    "178320": {
-      "code": "178320",
-      "name": "서진시스템",
-      "price": 39800,
-      "chg": 2.05,
-      "vol": 603864,
-      "foreignRatio": 15.95,
-      "themes": [],
-      "sumF": 513009,
-      "sumI": 199417,
-      "sumR": -848600,
-      "cmf": 0.46,
-      "vwapGap": -9.4,
-      "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 39800,
-          "foreign": -127901,
-          "inst": 118398,
-          "retail": 8022
-        },
-        {
-          "date": "20260724",
-          "close": 39000,
-          "foreign": -187999,
-          "inst": -52702,
-          "retail": 244378
-        },
-        {
-          "date": "20260723",
-          "close": 42500,
-          "foreign": -454665,
-          "inst": 173613,
-          "retail": 224327
-        },
-        {
-          "date": "20260722",
-          "close": 36250,
-          "foreign": 26827,
-          "inst": -41985,
-          "retail": -16858
-        },
-        {
-          "date": "20260721",
-          "close": 36200,
-          "foreign": 143575,
-          "inst": -43459,
-          "retail": 13369
-        },
-        {
-          "date": "20260720",
-          "close": 36600,
-          "foreign": 104977,
-          "inst": -24691,
-          "retail": -81662
-        },
-        {
-          "date": "20260716",
-          "close": 39300,
-          "foreign": -37336,
-          "inst": -57981,
-          "retail": 83014
-        }
-      ]
-    },
-    "257720": {
-      "code": "257720",
-      "name": "KSQ150",
-      "price": 38400,
-      "chg": 8.94,
-      "vol": 677408,
-      "foreignRatio": 7.31,
-      "themes": [],
-      "sumF": -389516,
-      "sumI": 1421931,
-      "sumR": -1065465,
-      "cmf": 0.49,
-      "vwapGap": 6.9,
-      "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 38400,
-          "foreign": 72955,
-          "inst": 224302,
-          "retail": -286176
-        },
-        {
-          "date": "20260724",
-          "close": 35250,
-          "foreign": 19890,
-          "inst": -29083,
-          "retail": 8923
-        },
-        {
-          "date": "20260723",
-          "close": 36400,
-          "foreign": 107909,
-          "inst": -72493,
-          "retail": -37180
-        },
-        {
-          "date": "20260722",
-          "close": 35000,
-          "foreign": -33677,
-          "inst": -2346,
-          "retail": 35518
-        },
-        {
-          "date": "20260721",
-          "close": 35650,
-          "foreign": 22061,
-          "inst": 85915,
-          "retail": -106769
-        },
-        {
-          "date": "20260720",
-          "close": 34450,
-          "foreign": 17621,
-          "inst": 18973,
-          "retail": -38301
-        },
-        {
-          "date": "20260716",
-          "close": 36050,
-          "foreign": 58963,
-          "inst": -49973,
-          "retail": -7535
-        }
-      ]
-    },
-    "319400": {
-      "code": "319400",
-      "name": "현대오토에버",
-      "price": 21850,
-      "chg": 13.68,
-      "vol": 6549867,
-      "foreignRatio": 1.63,
-      "themes": [],
-      "sumF": -155830,
-      "sumI": 327444,
-      "sumR": -154855,
-      "cmf": 0.53,
-      "vwapGap": -0.6,
-      "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
-      "days": [
-        {
-          "date": "20260727",
-          "close": 21850,
-          "foreign": 24596,
-          "inst": 61332,
-          "retail": -82977
-        },
-        {
-          "date": "20260724",
-          "close": 19220,
-          "foreign": -293549,
-          "inst": -70371,
-          "retail": 366699
-        },
-        {
-          "date": "20260723",
-          "close": 21550,
-          "foreign": 166246,
-          "inst": 98617,
-          "retail": -263220
-        },
-        {
-          "date": "20260722",
-          "close": 19730,
-          "foreign": -164925,
-          "inst": -32083,
-          "retail": 191364
-        },
-        {
-          "date": "20260721",
-          "close": 18900,
-          "foreign": -58613,
-          "inst": 19424,
-          "retail": 40042
-        },
-        {
-          "date": "20260720",
-          "close": 18550,
-          "foreign": 134574,
-          "inst": -4909,
-          "retail": -129809
-        },
-        {
-          "date": "20260716",
-          "close": 19220,
-          "foreign": -73526,
-          "inst": -56876,
-          "retail": 156060
-        }
-      ]
-    },
     "033100": {
       "code": "033100",
       "name": "제룡전기",
-      "price": 45300,
-      "chg": 1.12,
-      "vol": 123084,
+      "price": 41550,
+      "chg": -8.28,
+      "vol": 54043,
       "foreignRatio": 4.08,
       "themes": [
         "전력설비"
@@ -4127,8 +4195,8 @@
       "cmf": 0.48,
       "vwapGap": -2.4,
       "adTrend": "up",
-      "volDiverge": false,
-      "scenario": "accumulate",
+      "volDiverge": true,
+      "scenario": "stealth",
       "days": [
         {
           "date": "20260727",
@@ -4184,10 +4252,10 @@
     "062040": {
       "code": "062040",
       "name": "산일전기",
-      "price": 166400,
-      "chg": -2.58,
-      "vol": 164404,
-      "foreignRatio": 17.65,
+      "price": 147200,
+      "chg": -11.54,
+      "vol": 98201,
+      "foreignRatio": 17.66,
       "themes": [
         "전력설비"
       ],
@@ -4271,6 +4339,13 @@
       "scenario": "neutral",
       "days": [
         {
+          "date": "20260727",
+          "close": 932,
+          "foreign": 0,
+          "inst": 0,
+          "retail": 0
+        },
+        {
           "date": "20260724",
           "close": 932,
           "foreign": 0,
@@ -4311,22 +4386,15 @@
           "foreign": 0,
           "inst": 0,
           "retail": 0
-        },
-        {
-          "date": "20260715",
-          "close": 932,
-          "foreign": 0,
-          "inst": 0,
-          "retail": 0
         }
       ]
     },
     "042700": {
       "code": "042700",
       "name": "한미반도체",
-      "price": 204500,
-      "chg": 2.25,
-      "vol": 518644,
+      "price": 181100,
+      "chg": -11.44,
+      "vol": 390126,
       "foreignRatio": 7.12,
       "themes": [
         "HBM반도체"
@@ -4337,8 +4405,8 @@
       "cmf": -0.5,
       "vwapGap": -9.0,
       "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
+      "volDiverge": false,
+      "scenario": "exit",
       "days": [
         {
           "date": "20260727",
@@ -4394,9 +4462,9 @@
     "394280": {
       "code": "394280",
       "name": "오픈엣지테크놀로지",
-      "price": 10230,
-      "chg": 4.39,
-      "vol": 57224,
+      "price": 9170,
+      "chg": -10.36,
+      "vol": 49796,
       "foreignRatio": 2.53,
       "themes": [
         "HBM반도체"
@@ -4407,8 +4475,8 @@
       "cmf": -0.58,
       "vwapGap": -4.9,
       "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
+      "volDiverge": false,
+      "scenario": "exit",
       "days": [
         {
           "date": "20260727",
@@ -4464,9 +4532,9 @@
     "010140": {
       "code": "010140",
       "name": "삼성중공업",
-      "price": 22650,
-      "chg": -1.09,
-      "vol": 3150931,
+      "price": 20850,
+      "chg": -7.95,
+      "vol": 1690853,
       "foreignRatio": 28.99,
       "themes": [
         "조선"
@@ -4534,10 +4602,10 @@
     "071970": {
       "code": "071970",
       "name": "HD현대마린엔진",
-      "price": 65600,
-      "chg": -2.96,
-      "vol": 271073,
-      "foreignRatio": 13.18,
+      "price": 59800,
+      "chg": -8.84,
+      "vol": 86069,
+      "foreignRatio": 13.19,
       "themes": [
         "조선"
       ],
@@ -4604,9 +4672,9 @@
     "051910": {
       "code": "051910",
       "name": "LG화학",
-      "price": 260000,
-      "chg": 0.39,
-      "vol": 136487,
+      "price": 243500,
+      "chg": -6.35,
+      "vol": 75328,
       "foreignRatio": 37.48,
       "themes": [
         "2차전지"
@@ -4617,8 +4685,8 @@
       "cmf": -0.52,
       "vwapGap": -2.4,
       "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
+      "volDiverge": false,
+      "scenario": "exit",
       "days": [
         {
           "date": "20260727",
@@ -4674,9 +4742,9 @@
     "121600": {
       "code": "121600",
       "name": "나노신소재",
-      "price": 42350,
-      "chg": 3.17,
-      "vol": 40746,
+      "price": 39050,
+      "chg": -7.79,
+      "vol": 28607,
       "foreignRatio": 7.11,
       "themes": [
         "2차전지"
@@ -4687,8 +4755,8 @@
       "cmf": -0.5,
       "vwapGap": -6.3,
       "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
+      "volDiverge": false,
+      "scenario": "exit",
       "days": [
         {
           "date": "20260727",
@@ -4744,9 +4812,9 @@
     "047810": {
       "code": "047810",
       "name": "한국항공우주",
-      "price": 146200,
-      "chg": -7.53,
-      "vol": 529723,
+      "price": 145000,
+      "chg": -0.82,
+      "vol": 172550,
       "foreignRatio": 24.1,
       "themes": [
         "방산"
@@ -4814,10 +4882,10 @@
     "079550": {
       "code": "079550",
       "name": "LIG넥스원",
-      "price": 696000,
-      "chg": -8.66,
-      "vol": 139076,
-      "foreignRatio": 25.98,
+      "price": 667000,
+      "chg": -4.17,
+      "vol": 49045,
+      "foreignRatio": 25.99,
       "themes": [
         "방산"
       ],
@@ -4884,9 +4952,9 @@
     "065450": {
       "code": "065450",
       "name": "빅텍",
-      "price": 2945,
-      "chg": -6.36,
-      "vol": 605553,
+      "price": 2805,
+      "chg": -4.75,
+      "vol": 307085,
       "foreignRatio": 3.58,
       "themes": [
         "방산"
@@ -4954,9 +5022,9 @@
     "454910": {
       "code": "454910",
       "name": "두산로보틱스",
-      "price": 66200,
-      "chg": 2.32,
-      "vol": 410991,
+      "price": 60100,
+      "chg": -9.21,
+      "vol": 273361,
       "foreignRatio": 5.79,
       "themes": [
         "로봇"
@@ -4967,8 +5035,8 @@
       "cmf": 0.6,
       "vwapGap": -10.9,
       "adTrend": "flat",
-      "volDiverge": false,
-      "scenario": "accumulate",
+      "volDiverge": true,
+      "scenario": "stealth",
       "days": [
         {
           "date": "20260727",
@@ -5024,9 +5092,9 @@
     "270660": {
       "code": "270660",
       "name": "에브리봇",
-      "price": 12700,
-      "chg": 5.48,
-      "vol": 96559,
+      "price": 11280,
+      "chg": -11.18,
+      "vol": 90031,
       "foreignRatio": 0.0,
       "themes": [
         "로봇"
@@ -5037,8 +5105,8 @@
       "cmf": -0.55,
       "vwapGap": 9.2,
       "adTrend": "down",
-      "volDiverge": true,
-      "scenario": "distribute",
+      "volDiverge": false,
+      "scenario": "exit",
       "days": [
         {
           "date": "20260727",
@@ -5097,42 +5165,42 @@
       "label": "전력·에너지",
       "emoji": "⚡",
       "flow": -986896,
-      "chg": -1.02,
+      "chg": -8.94,
       "count": 6
     },
     "HBM반도체": {
       "label": "반도체·HBM",
       "emoji": "🔧",
       "flow": -42483642,
-      "chg": 3.04,
+      "chg": -12.14,
       "count": 5
     },
     "조선": {
       "label": "조선",
       "emoji": "🚢",
       "flow": -3202628,
-      "chg": -0.21,
+      "chg": -7.26,
       "count": 5
     },
     "2차전지": {
       "label": "2차전지",
       "emoji": "🔋",
       "flow": 655638,
-      "chg": 1.52,
+      "chg": -6.51,
       "count": 5
     },
     "방산": {
       "label": "방산",
       "emoji": "🛡️",
       "flow": 147684,
-      "chg": -7.68,
+      "chg": -3.35,
       "count": 4
     },
     "로봇": {
       "label": "피지컬AI·로봇",
       "emoji": "🤖",
       "flow": -384986,
-      "chg": 4.85,
+      "chg": -10.18,
       "count": 4
     }
   }
